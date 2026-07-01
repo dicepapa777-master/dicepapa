@@ -1996,7 +1996,7 @@ export default function App() {
                     background: selectedPurpose === p ? "#111" : "#fff",
                     color: selectedPurpose === p ? "#fff" : "#333",
                     fontWeight: selectedPurpose === p ? 700 : 600,
-                    fontSize: 13, cursor: "pointer", transition: "all 0.15s",
+                    fontSize: 11, cursor: "pointer", transition: "all 0.15s",
                     display: "flex", alignItems: "center", justifyContent: "center",
                   }}>{purposeEmoji[p] || "🎲"} {p}</button>
                 ))}
