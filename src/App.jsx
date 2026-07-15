@@ -2181,7 +2181,7 @@ export default function App() {
                 <div style={{ color: "#fff", fontWeight: 800, fontSize: 14, lineHeight: 1.4 }}>게임 꺼내면<br />아이 눈이 달라져요 🎲</div>
               </div>
               <a href="https://instagram.com/dicepapa777" target="_blank" rel="noopener noreferrer"
-                style={{ padding: "8px 14px", borderRadius: 7, background: "#fff", color: "#111", fontWeight: 800, fontSize: 12, textDecoration: "none", flexShrink: 0 }}>팔로우 →</a>
+                style={{ padding: "8px 14px", borderRadius: 7, background: "#fff", color: "#111", fontWeight: 800, fontSize: 12, textDecoration: "none", flexShrink: 0 }}>인스타 팔로우 →</a>
             </div>
 
             {/* 쿠팡 파트너스 고지 */}
@@ -2303,11 +2303,12 @@ export default function App() {
                               <div style={{
                                 position: "absolute", top: 10, left: 10,
                                 display: "flex", alignItems: "center", gap: 6,
-                                background: "#111", padding: "6px 12px 6px 10px", borderRadius: 20,
-                                boxShadow: "0 2px 8px rgba(0,0,0,0.35)",
+                                background: "linear-gradient(135deg, #FFE9A8, #E8C04E 55%, #C9A227)",
+                                padding: "6px 12px 6px 10px", borderRadius: 20,
+                                boxShadow: "0 2px 8px rgba(0,0,0,0.3)",
                               }}>
-                                <span style={{ fontSize: 16, color: "#E8C04E" }}>★</span>
-                                <span style={{ color: "#fff", fontSize: 12, fontWeight: 800, whiteSpace: "nowrap" }}>다이스파파 베스트</span>
+                                <span style={{ fontSize: 15, color: "#6B5000" }}>★</span>
+                                <span style={{ color: "#6B5000", fontSize: 12, fontWeight: 800, whiteSpace: "nowrap" }}>다이스파파 베스트</span>
                               </div>
                             )}
                           </div>
@@ -2366,7 +2367,7 @@ export default function App() {
         }}>
           <div style={{ fontSize: 13, color: "#111", fontWeight: 700, whiteSpace: "nowrap" }}>🎲 더 많은 정보를 얻고 싶다면!</div>
           <a href="https://instagram.com/dicepapa777" target="_blank" rel="noopener noreferrer"
-            style={{ padding: "7px 14px", borderRadius: 7, border: "1.5px solid #111", background: "#111", color: "#fff", fontWeight: 700, fontSize: 12, textDecoration: "none" }}>팔로우</a>
+            style={{ padding: "7px 14px", borderRadius: 7, border: "1.5px solid #111", background: "#111", color: "#fff", fontWeight: 700, fontSize: 12, textDecoration: "none" }}>인스타 팔로우</a>
         </div>
       )}
     </div>
