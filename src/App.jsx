@@ -2061,8 +2061,8 @@ export default function App() {
                 아이 보드게임, 이제 헤매지 마세요
               </div>
               <div style={{ fontSize: 13, color: "#333", lineHeight: 1.7, fontWeight: 500 }}>
-                보드게임지도사 1급 아빠가 아이와 직접 해보고 검증한<br />
-                게임을, 필터 한 번으로 바로 찾아 보실 수 있어요.<br />
+                보드게임지도사 1급 아빠가 검증한 게임을<br />
+                필터 한 번으로 바로 찾아 보실 수 있어요.<br />
                 연령별 발달, 정확하게 맞춰드립니다.
               </div>
               <div style={{ display: "flex", gap: 8, marginTop: 10, flexWrap: "wrap" }}>
@@ -2303,15 +2303,11 @@ export default function App() {
                               <div style={{
                                 position: "absolute", top: 10, left: 10,
                                 display: "flex", alignItems: "center", gap: 6,
+                                background: "#111", padding: "6px 12px 6px 10px", borderRadius: 20,
+                                boxShadow: "0 2px 8px rgba(0,0,0,0.35)",
                               }}>
-                                <div style={{
-                                  fontSize: 26, color: "#E8C04E",
-                                  textShadow: "0 2px 5px rgba(0,0,0,0.4)",
-                                }}>★</div>
-                                <div style={{
-                                  background: "#111", color: "#fff", fontSize: 11, fontWeight: 800,
-                                  padding: "4px 10px", borderRadius: 10, whiteSpace: "nowrap",
-                                }}>다이스파파 베스트</div>
+                                <span style={{ fontSize: 16, color: "#E8C04E" }}>★</span>
+                                <span style={{ color: "#fff", fontSize: 12, fontWeight: 800, whiteSpace: "nowrap" }}>다이스파파 베스트</span>
                               </div>
                             )}
                           </div>
