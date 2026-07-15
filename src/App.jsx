@@ -17,10 +17,11 @@ const games = [
     "time": "20분",
     "rule": "주사위 3개를 굴려요. 나온 테두리 색깔, 무늬, 모양을 모두 확인한 뒤, 카드에서 일치하는 모자를 가장 빨리 찾아 막대기로 집으면 토큰을 얻어요. 틀리면 토큰을 반납해요.",
     "effect": "세 가지 조건을 동시에 파악하는 관찰력과 순발력이 자연스럽게 길러져요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnNrqvQnu0",
     "pros": "규칙이 직관적, 여럿이 함께 즐기기 좋음, 아이가 먼저 꺼내 옴",
     "caution": "반복되면 금방 질릴 수 있음",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 2,
@@ -36,10 +37,11 @@ const games = [
     "time": "15분",
     "rule": "야자나무 기둥에 꽂힌 막대기를 하나씩 빼요. 주사위를 굴려 나온 색상의 막대기를 빼야 해요. 원숭이가 떨어지면 게임이 끝나고, 가장 적게 가져간 사람이 이겨요.",
     "effect": "막대기를 조심스럽게 빼는 과정에서 소근육 조절력과 집중력이 길러져요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnNDgtpXZQ",
     "pros": "준비 쉽고 바로 시작 가능, 가족 모두 즐김",
     "caution": "부품 작아 분실 주의, 공간 많이 차지",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 3,
@@ -54,10 +56,11 @@ const games = [
     "time": "15분",
     "rule": "요리사 인형 손 위에 피자판을 올리고 준비해요. 주사위를 굴려 나온 토핑을 피자 위에 조심조심 올려요. 피자가 쓰러지거나 토핑이 떨어지면 탈락이에요!",
     "effect": "흔들리는 피자 위에 토핑을 올리며 손끝 소근육 조절력과 집중력이 길러져요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnNKoE3qW4",
     "pros": "준비 간단, 유아도 쉽게 참여, 온 가족 함께",
     "caution": "규칙 단순해 반복 플레이 지루할 수 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 4,
@@ -73,10 +76,11 @@ const games = [
     "time": "15분",
     "rule": "카드를 섞어 부채꼴로 펼쳐 놓아요. 차례가 되면 카드 더미에서 한 장을 뽑아 같은 색깔의 뱀 머리나 꼬리에 이어 붙여요. 뱀을 완성시키거나 카드를 가장 많이 내려놓으면 이겨요.",
     "effect": "색깔 인식과 카드 연결 과정에서 색인지와 집중력이 자연스럽게 발달해요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnNWMmC0cu",
     "pros": "색깔 학습에 좋음, 첫 보드게임으로 추천",
     "caution": "카드 작아 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 5,
@@ -91,10 +95,11 @@ const games = [
     "time": "20분",
     "rule": "카드를 뒤집어 섞어 놓아요. 차례가 되면 카드 2장을 뒤집어 같은 국기가 나오면 가져가요. 기억했다가 짝을 맞춰야 해요. 카드를 가장 많이 모은 사람이 이겨요.",
     "effect": "카드 위치를 기억하고 짝을 찾는 과정에서 작업기억력과 집중력이 길러져요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnN3rQM8Jg",
     "pros": "국기 학습 효과, 기억력 향상, 혼자도 가능",
     "caution": "카드 수가 많아 처음엔 어려울 수 있음",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 6,
@@ -110,10 +115,11 @@ const games = [
     "time": "15분",
     "rule": "카드에 나온 그림대로 색깔 컵을 빠르게 배열해요. 가장 먼저 배열을 완성한 사람이 종을 치고 카드를 가져가요. 순발력과 집중력이 모두 필요해요!",
     "effect": "카드를 보고 빠르게 컵을 배열하며 관찰력과 순발력이 동시에 발달해요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnN8t1Q8Tk",
     "pros": "온 가족 함께, 빠르고 신나는 진행, 아이가 먼저 꺼내 옴",
     "caution": "규칙 이해에 시간 필요",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 7,
@@ -129,10 +135,11 @@ const games = [
     "time": "20분",
     "rule": "게임판에 문제지를 올리고 투명판을 끼워요. 가로·세로·네모 구역 안에 같은 숫자나 그림이 한 번씩만 들어가도록 빈칸에 타일을 놓으면 돼요. 난이도가 1단계부터 48단계까지 있어요.",
     "effect": "논리적으로 빈칸을 채우는 과정에서 사고력과 수인지, 집중력이 함께 발달해요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnOfabs0wC",
     "pros": "난이도 단계별 조절 가능, 혼자서도 집중해서 플레이",
     "caution": "타일 스티커 붙이기 준비 필요",
-    "solo": true
+    "solo": true,
+    "best": false
   },
   {
     "no": 8,
@@ -148,10 +155,11 @@ const games = [
     "time": "15분",
     "rule": "카드를 나눠 가진 후 한 장씩 앞에 펼쳐요. 한 종류의 과일이 정확히 5개가 되면 가장 빨리 종을 쳐요! 종을 친 사람이 바닥의 모든 카드를 가져가요. 카드를 모두 모으면 이겨요.",
     "effect": "과일 개수를 순간적으로 세고 빠르게 반응하며 수인지와 순발력이 동시에 길러져요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnOkkFAdoW",
     "pros": "규칙 간단, 온 가족 함께, 아이가 먼저 꺼내 옴",
     "caution": "종소리가 크니 저녁엔 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 9,
@@ -166,10 +174,11 @@ const games = [
     "time": "15분",
     "rule": "그림 타일들을 섞어 놓아요. 이야기의 흐름에 맞게 타일을 순서대로 늘어놓아요. 상황의 앞뒤 순서를 맞추는 퍼즐 게임이에요.",
     "effect": "이야기의 흐름과 순서를 논리적으로 이해하며 사고력과 언어 발달에 도움이 돼요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnOpT8gji8",
     "pros": "논리적 순서 이해, 부모와 대화 유도",
     "caution": "3세엔 다소 어려울 수 있음",
-    "solo": true
+    "solo": true,
+    "best": false
   },
   {
     "no": 10,
@@ -185,10 +194,11 @@ const games = [
     "time": "15분",
     "rule": "밸런스 보드 위에 번갈아 가며 개구리를 한 마리씩 올려요. 주사위를 굴려 나온 숫자만큼 개구리를 올릴 수도 있어요. 보드를 무너뜨리는 사람이 벌칙을 받아요!",
     "effect": "흔들리는 보드 위에 개구리를 조심스럽게 올리며 소근육과 집중력이 쑥쑥 자라요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnOzRFaYVg",
     "pros": "준비 빠름, 온 가족 함께, 개구리 캐릭터 인기",
     "caution": "개구리 크기 작아 어린 아이 주의",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 11,
@@ -204,10 +214,11 @@ const games = [
     "time": "15분",
     "rule": "주문표 카드를 공개하면 쿠키들이 펼쳐져요. 카드에 나온 모양대로 쿠키를 가장 빠르게 배열해요. 완성하면 종을 치고 선물 상자를 가져가요. 선물 상자 4개를 먼저 모으면 이겨요.",
     "effect": "주문표를 읽고 빠르게 쿠키를 배열하며 관찰력과 순발력이 동시에 길러져요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnPoGWAT6q",
     "pros": "쿠키 테마로 아이들 흥미 유발, 규칙 이해 빠름",
     "caution": "6세 미만은 다소 어려울 수 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 12,
@@ -222,10 +233,11 @@ const games = [
     "time": "10분",
     "rule": "비행기 루이가 빙글빙글 돌아요. 루이가 내 닭을 덮치려 할 때 누름판을 눌러 튕겨내세요! 닭을 가장 많이 지켜낸 사람이 이겨요.",
     "effect": "빠르게 돌아오는 비행기를 튕겨내며 순발력과 순간 집중력이 쑥쑥 길러져요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnPvQpZEBM",
     "pros": "온 가족 함께, 준비 빠름, 아이가 먼저 꺼내 옴",
     "caution": "닭 부품 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 13,
@@ -240,10 +252,11 @@ const games = [
     "time": "20분",
     "rule": "주사위를 굴려 나온 숫자만큼 말을 이동해요. 사다리를 만나면 올라가고, 미끄럼틀을 만나면 내려가요. 가장 먼저 결승점에 도착하면 이겨요.",
     "effect": "숫자를 세며 이동하는 과정에서 수 감각과 규칙 이해력이 자연스럽게 발달해요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnPA8lECY0",
     "pros": "포켓몬 캐릭터로 아이 흥미 유발, 규칙 간단",
     "caution": "포켓몬 캐릭터 관심 없으면 흥미 덜함",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 14,
@@ -259,10 +272,11 @@ const games = [
     "time": "20분",
     "rule": "게임보드에 스키퍼를 올리고 상대 칩을 점프해서 넘어요. 점프한 칩은 내 것이 돼요. 상대 칩을 더 많이 가져오면 이겨요. 점프와 스킵을 활용해 전략적으로 움직여요.",
     "effect": "어디서 점프할지 생각하며 공간지각력과 전략적 사고력이 발달해요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnPGMZeceW",
     "pros": "시각적으로 화려해 아이들 좋아함, 전략성 있음",
     "caution": "5세 미만은 규칙 이해 어려움",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 15,
@@ -278,10 +292,11 @@ const games = [
     "time": "20분",
     "rule": "숫자 타일을 받아 순서대로 세워요. 내 타일은 숨기고 상대 타일을 추리해요. 차례마다 타일을 뽑아 상대 타일을 맞추면 눕혀요. 내 타일이 모두 노출되면 탈락해요.",
     "effect": "숫자 순서와 단서를 분석하며 논리적 추리력과 수 감각이 함께 길러져요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnPX9am8bs",
     "pros": "온 가족 함께, 두뇌 자극, 반복 플레이 가능",
     "caution": "6세 미만은 숫자 개념 필요",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 16,
@@ -297,10 +312,11 @@ const games = [
     "time": "15분",
     "rule": "동그란 통나무를 탑처럼 쌓아요. 룰렛을 돌려 나온 색상의 통나무를 빼내고 맨 위에 다시 올려요. 탑을 무너뜨리거나 다람쥐를 떨어뜨리면 져요.",
     "effect": "통나무를 조심스럽게 빼고 올리는 과정에서 소근육과 집중력이 발달해요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnP20u2TvM",
     "pros": "색깔 학습 병행, 가족 모두 즐김, 준비 빠름",
     "caution": "통나무 부품 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 17,
@@ -316,10 +332,11 @@ const games = [
     "time": "15분",
     "rule": "블록을 18층으로 쌓아요. 차례마다 맨 위층을 제외한 곳에서 블록 하나를 한 손으로 조심히 빼서 맨 위에 올려요. 탑을 무너뜨린 사람이 지는 게임이에요.",
     "effect": "블록을 빼고 올리는 과정에서 소근육 조절력과 집중력, 전략적 사고가 발달해요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnQmLNd5si",
     "pros": "전 연령 함께, 차례 지키기 학습, 도미노 등 다양한 활용",
     "caution": "뾰족한 모서리 없이 안전함",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 18,
@@ -334,10 +351,11 @@ const games = [
     "time": "15분",
     "rule": "퍼즐 조각을 섞어 놓아요. 동물의 상황과 표정 짝을 맞춰요. 짝을 맞추면 아이가 그 감정을 직접 설명하게 해요. 행복, 슬픔, 분노, 두려움 등 다양한 감정을 배울 수 있어요.",
     "effect": "상황에 맞는 표정을 찾으며 감정 이해력과 언어 표현력이 자연스럽게 발달해요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnQtsZaLdc",
     "pros": "감정 표현 어휘 학습, 아이가 직접 설명하게 유도",
     "caution": "3세엔 퍼즐 맞추기 어려울 수 있음",
-    "solo": true
+    "solo": true,
+    "best": false
   },
   {
     "no": 19,
@@ -353,10 +371,11 @@ const games = [
     "time": "15분",
     "rule": "탁구공을 튕겨 계란판 칸에 넣어요. 가로, 세로, 대각선으로 빙고를 먼저 완성하면 이겨요. 공을 정확하게 튕기는 것이 포인트예요!",
     "effect": "공을 정확히 튕기고 빙고 전략을 짜며 집중력과 공간지각력이 함께 발달해요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnQzPDQJKC",
     "pros": "준비 빠름, 온 가족 함께, 집중력 향상 효과",
     "caution": "탁구공 분실 주의, 공간 필요",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 20,
@@ -372,10 +391,11 @@ const games = [
     "time": "30분",
     "rule": "그림카드를 머리띠에 꽂아요. 내 카드는 안 보여요. 60초 안에 다른 사람들에게 질문해서 내 그림이 뭔지 맞춰요. '나는 동물인가요?' 같은 질문으로 단서를 모아요.",
     "effect": "질문하고 추측하는 과정에서 언어 표현력, 논리적 사고력, 추리력이 함께 발달해요",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnQIyb9wuO",
     "pros": "가족 대화 유도, 어휘력 향상, 규칙 간단",
     "caution": "카드 종류 많아 외우는 데 시간 필요",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 21,
@@ -391,10 +411,11 @@ const games = [
     "time": "15분",
     "rule": "주문 카드를 공개하면 모두 동시에 꼬치를 만들어요. 스테이크·토마트·피망·새우 등 재료를 올바른 순서대로 꼬치에 꿰면 돼요. 가장 빨리 완성한 사람이 점수를 얻고, 가장 많은 점수를 모으면 이겨요.",
     "effect": "주문에 맞게 재료를 순서대로 꿰는 과정에서 소근육 조절력과 순발력, 집중력이 함께 길러져요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnQQsCKA8W",
     "pros": "준비 간단하고 규칙 직관적, 온 가족 함께 즐김, 재플레이 욕구 높음",
     "caution": "재료 부품 작아 어린 아이 주의, 반복 시 금방 익숙해질 수 있음",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 22,
@@ -410,10 +431,11 @@ const games = [
     "time": "20분",
     "rule": "패턴카드를 뽑아 트레이에 꽂아요. 타일을 관찰해 빈칸에 어떤 모양이 와야 하는지 규칙을 찾아 채워요. 초급·중급·고급 3단계 40가지 챌린지를 순서대로 풀 수 있어요.",
     "effect": "패턴의 규칙을 찾고 예측하는 과정에서 논리적 사고력과 수학적 패턴 인지력이 자연스럽게 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnRdgQRUwS",
     "pros": "난이도 단계별 조절 가능, 혼자서도 집중해서 플레이, 알고리즘 사고력 향상",
     "caution": "1인용이라 경쟁 요소 없음, 타일 분실 주의",
-    "solo": true
+    "solo": true,
+    "best": false
   },
   {
     "no": 23,
@@ -428,10 +450,11 @@ const games = [
     "time": "15분",
     "rule": "펭귄 속에 알을 넣고 섞어서 테이블에 놓아요. 주사위 2개를 던진 뒤 나온 색깔과 일치하는 알을 품은 펭귄을 찾아요. 뒤집어 알 색을 확인하고 일치하면 펭귄과 알을 가져가요. 가장 많이 모은 사람이 이겨요.",
     "effect": "펭귄의 위치와 알 색깔을 기억하며 찾는 과정에서 작업기억력과 집중력이 쑥쑥 길러져요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnRhk1oeLA",
     "pros": "귀여운 캐릭터로 아이 흥미 유발, 규칙 간단, 온 가족 함께",
     "caution": "주사위 두 색 모두 맞아야 해서 운 요소 있음",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 24,
@@ -447,10 +470,11 @@ const games = [
     "time": "10분",
     "rule": "한글과 영어로 된 동물 카드를 뒤집어 섞어 놓아요. 차례마다 카드 2장을 뒤집어 같은 동물 짝을 찾아요. 짝이 맞으면 카드를 가져가고, 카드 수를 조절해 난이도를 바꿀 수 있어요.",
     "effect": "동물 이름을 한글·영어로 익히면서 짝 맞추기를 하는 과정에서 기억력과 언어 학습 효과가 동시에 길러져요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnSgYo0rvN",
     "pros": "한영 동물 학습 효과, 카드 수 조절로 난이도 조절 가능, 가족 모두 즐김",
     "caution": "카드 수 많으면 어린 아이에겐 다소 어려움",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 25,
@@ -465,10 +489,11 @@ const games = [
     "time": "10분",
     "rule": "카드를 나눠 가져요. 차례마다 이웃의 카드를 1장 뽑아서 짝이 맞으면 내려놓아요. 도둑 토끼 카드를 뽑으면 큰일! 마지막에 토끼 카드를 가진 채 남은 사람이 패배자예요.",
     "effect": "어떤 카드를 낼지 눈치를 보고 판단하는 과정에서 전략적 사고력과 순발력이 자연스럽게 길러져요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnSlx0jL4e",
     "pros": "규칙 매우 간단, 빠른 진행, 아이가 먼저 꺼내 옴",
     "caution": "운 요소 강해 반복 시 결과 예측 어려움",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 26,
@@ -484,10 +509,11 @@ const games = [
     "time": "30분",
     "rule": "각자 색깔 블록 세트를 가져요. 자기 블록의 꼭지점끼리만 닿도록 게임판에 올려놓아요. 상대를 차단하고 자신의 공간을 최대한 넓히며 가장 많은 블록을 올린 사람이 이겨요.",
     "effect": "블록을 어디에 놓을지 생각하며 공간지각력과 전략적 사고력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnSsLSdrrw",
     "pros": "온 가족·친구 함께, 짧은 시간에 치열한 두뇌싸움, 재플레이 가치 높음",
     "caution": "7세 미만은 규칙 이해 어려움, 블록 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 27,
@@ -503,10 +529,11 @@ const games = [
     "time": "15분",
     "rule": "카드를 뒤집어 섞어 테이블 중앙에 놓아요. 카드를 1장 공개하면 4가지 색 중 해당 색의 큐브 면으로 맞춰요. 가장 빨리 완성하고 종을 치면 카드를 가져가요. 카드를 가장 많이 모으면 이겨요.",
     "effect": "표정 카드를 보고 큐브 면을 빠르게 맞추는 과정에서 관찰력과 공간지각력, 순발력이 길러져요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnSxVMeSrs",
     "pros": "규칙 간단, 온 가족 함께, 어린이·어른 모두 재미있게 즐김",
     "caution": "큐브 면 조작 처음엔 어려울 수 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 28,
@@ -522,10 +549,11 @@ const games = [
     "time": "10분",
     "rule": "인원수에 맞게 깨끗한 면을 위로 돼지 카드를 놓아요. 차례마다 카드 1장을 사용하거나 버려요. 카드 효과로 상대 돼지를 더럽히고 내 돼지를 깨끗이 지켜요. 자기 돼지가 모두 더러워지면 탈락해요.",
     "effect": "어떤 카드를 낼지 상황을 파악하고 결정하는 과정에서 전략적 사고력과 집중력이 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnSEB916lM",
     "pros": "온 가족 함께, 빠른 진행, 귀여운 돼지 테마로 아이들 흥미 유발",
     "caution": "8세 미만은 전략 이해 어려울 수 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 29,
@@ -541,10 +569,11 @@ const games = [
     "time": "20분",
     "rule": "게임판에 말을 올리고 주사위를 굴려요. 멈춘 칸의 색에 맞는 다리 타일을 놓거나 패턴 카드 챌린지를 도전해요. 빠르게 패턴 팔레스에 도착하면 이겨요. 초급·고급 2가지 모드로 즐길 수 있어요.",
     "effect": "숫자 캐릭터와 함께 패턴을 맞추고 이동하는 과정에서 수인지와 논리적 사고력이 자연스럽게 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fnSLiHF1KC",
     "pros": "넘버블록스 캐릭터로 흥미 유발, 난이도 조절 가능, 수학 기초 학습 효과",
     "caution": "영문 게임이라 한글 가이드 필요, 부품 작아 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 30,
@@ -560,10 +589,11 @@ const games = [
     "time": "20분",
     "rule": "미로 게임판에 라쿠카라차(바퀴벌레)를 올려요. 식기들을 움직여 라쿠카라차를 함정으로 유인해요. 정신없이 돌아다니는 라쿠카라차의 움직임에 빠르게 반응하며 가장 많이 함정에 빠뜨린 사람이 이겨요.",
     "effect": "예측 불가한 움직임에 빠르게 반응하고 식기를 조작하는 과정에서 순발력과 공간 파악 능력이 길러져요.",
-    "coupang": null,
+    "coupang": "https://www.coupang.com/vp/products/6919423231?itemId=16703692617&vendorItemId=83886170248&q=%EB%9D%BC%EC%BF%A0%EC%B9%B4%EB%9D%BC%EC%B0%A8&searchId=6c73d43c6555051&sourceType=search&itemsCount=36&searchRank=2&rank=2&traceId=mrkuqlsq",
     "pros": "실제 움직이는 부품으로 박진감 있음, 온 가족 함께, 준비 빠름",
     "caution": "배터리 필요, 라쿠카라차 탈출 방지에 공간 확보 필요",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 31,
@@ -578,10 +608,11 @@ const games = [
     "time": "20분",
     "rule": "게임판을 펼치고 스파팅 카드를 섞어 더미에 쌓아요. 카드 1장을 뒤집어 그림을 확인한 후, 게임판 속에서 같은 그림을 찾아요. 가장 먼저 찾아 \"스파팅톤!\"을 외치면 카드를 획득해요. 카드를 가장 많이 모은 사람이 이겨요.",
     "effect": "마을 배경 그림판에서 작고 비슷한 그림들 중 목표 그림을 찾는 과정에서 세밀한 관찰력과 집중력이 길러져요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fotYrTUUeq",
     "pros": "그림 찾기 특화, 혼자서도 여럿이도 가능, 재플레이 높음",
     "caution": "그림 작아 어린 아이엔 다소 어려움, 카드 분실 주의",
-    "solo": true
+    "solo": true,
+    "best": true
   },
   {
     "no": 32,
@@ -597,10 +628,11 @@ const games = [
     "time": "10분",
     "rule": "카드를 뽑아 디지털 시간이 보이게 카드홀더에 놓아요. 모두가 자신의 시계판 바늘을 카드 속 시간에 맞게 움직여요. 카드를 뒤집어 정답(아날로그 시계 그림)을 확인해, 정확히 맞추면 3점, 틀렸다가 수정해서 맞추면 1점을 얻어요. 가장 먼저 25점을 모으면 이겨요.",
     "effect": "디지털 시간을 보고 아날로그 시계 바늘을 직접 조작하며, 시침·분침의 움직이는 원리와 시·분 단위 개념을 이해하는 수인지 능력이 자연스럽게 길러져요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fot6ci9K2e",
     "pros": "시계 학습 효과 뚜렷함, 디자인·재질 만족도 높음, 아이가 재미있어함",
     "caution": "처음엔 부모가 시침·분침이 움직이는 원리를 먼저 설명해줘야 학습효과가 높음, 카드·부품 분실 주의",
-    "solo": true
+    "solo": true,
+    "best": false
   },
   {
     "no": 33,
@@ -616,10 +648,11 @@ const games = [
     "time": "15분",
     "rule": "주사위 3개를 던져요. 나온 색깔과 숫자를 확인하고 눈으로만 해당 색 캔디 개수를 세요. 손으로 건드리면 반칙! 가장 먼저 정확히 세어 접시에 담으면 이겨요.",
     "effect": "캔디를 눈으로만 빠르게 세는 과정에서 수 개념과 반응속도, 집중력이 동시에 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fougMJgZEW",
     "pros": "수세기 학습 효과, 규칙 간단, 온 가족 참여 가능",
     "caution": "손 건드리면 반칙이라 어린 아이 이해 필요",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 34,
@@ -635,10 +668,11 @@ const games = [
     "time": "15분",
     "rule": "2인 대결 게임이에요. 챌린지 카드를 뒤집어 문제를 확인해요. 도넛 링을 주어진 패턴대로 빠르게 기둥에 끼워 완성하고, 먼저 끝내면 종을 쳐요. 논리 패턴과 수 세기를 결합한 스피드 게임이에요.",
     "effect": "패턴 카드를 보고 링을 빠르게 배열하는 과정에서 논리적 사고력과 순발력, 수 인지력이 함께 길러져요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foukUHAcXA",
     "pros": "교육적 재미, 나무 소재 촉감 좋음, 2인 대결 긴장감",
     "caution": "2인 전용이라 인원 제한, 카드 보관 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 35,
@@ -654,10 +688,11 @@ const games = [
     "time": "10분",
     "rule": "카드를 뒤집어 패턴을 확인해요. 카드에 맞게 몬스터 블록을 쌓아요. 블록 방향, 위치, 색상을 맞추며 쌓고, 스케이트보드로 힘차게 밀어 블록을 무너뜨려요!",
     "effect": "카드 패턴에 맞게 블록을 쌓으며 공간지각력과 색 인지력, 소근육 조절력이 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fouujlxtp6",
     "pros": "2세부터 가능, 무너뜨리는 쾌감 흥미 유발, 규칙 직관적",
     "caution": "블록 무너뜨릴 공간 필요, 소음 있음",
-    "solo": true
+    "solo": true,
+    "best": true
   },
   {
     "no": 36,
@@ -673,10 +708,11 @@ const games = [
     "time": "15분",
     "rule": "폭탄을 손에서 손으로 빠르게 넘겨요. 폭탄이 터지기 전에 주제와 연관된 단어를 말해야 해요. 단어를 말 못하거나 폭탄이 터지면 탈락이에요.",
     "effect": "제한 시간 안에 주제 관련 단어를 떠올리는 과정에서 어휘력과 언어 반응 속도가 빠르게 길러져요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fouzy0z1Nc",
     "pros": "온 가족·대그룹 파티 최적, 준비 빠름, 폭소 유발",
     "caution": "건전지 필요, 나사 너무 꽉 조이면 오작동",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 37,
@@ -691,10 +727,11 @@ const games = [
     "time": "15분",
     "rule": "토끼를 4개씩 나눠 갖고 카드를 섞어요. 카드를 뒤집어 그림 속 지시만큼 토끼를 이동시켜요. 당근 카드가 나오면 오른쪽으로 빠르게 돌려요. 가장 먼저 당근 정상에 도착하는 토끼를 가진 사람이 이겨요.",
     "effect": "카드 지시에 따라 빠르게 반응하고 이동 전략을 판단하는 과정에서 순발력과 상황 판단력이 길러져요.",
-    "coupang": null,
+    "coupang": "https://www.coupang.com/vp/products/7143464460?itemId=17943698313&vendorItemId=85101554458&pickType=COU_PICK&q=%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C+%ED%86%A0%EB%81%BC%EB%8B%AC%EB%A6%AC%EA%B8%B0&searchId=b69ece6d2550537&sourceType=search&itemsCount=36&searchRank=0&rank=0&traceId=mrld6hvk",
     "pros": "귀여운 피규어, 간단 규칙, 온 가족 함께",
     "caution": "구멍 함정 주의, 나무다리 부서질 수 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 38,
@@ -710,10 +747,11 @@ const games = [
     "time": "15분",
     "rule": "카드를 뒤집어 빈칸 모양을 확인해요. 주어진 퍼즐 조각으로 빈칸을 딱 맞게 채워요. 가장 먼저 채우면 \"우봉고!\"를 외쳐요. 제한 시간 안에 풀어야 점수를 얻어요.",
     "effect": "빈칸에 맞는 퍼즐 조각을 빠르게 찾아 끼우는 과정에서 공간지각력과 논리적 사고력이 집중적으로 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fouLRWw1yS",
     "pros": "컴팩트한 휴대성, 긴장감 넘치는 스피드 퍼즐, 난이도 조절 가능",
     "caution": "7세 미만은 어려울 수 있음, 조각 분실 주의",
-    "solo": true
+    "solo": true,
+    "best": true
   },
   {
     "no": 39,
@@ -728,10 +766,11 @@ const games = [
     "time": "15분",
     "rule": "고양이들을 출발선에 세우고 전동 강아지 멍그를 마당 가운데 놓아요. 멍그가 무작위로 돌아다니다 고양이를 들이받으면 고양이가 날아올라요. 자기 고양이를 가장 먼저 집으로 모두 보내면 이겨요.",
     "effect": "예측 불가한 멍그의 움직임에 빠르게 반응하며 자기 고양이를 지키는 과정에서 순발력과 집중력이 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fouQouQAdU",
     "pros": "전동 피규어로 박진감, 온 가족 함께, 예측 불가 재미",
     "caution": "배터리 필요, 어느 정도 공간 필요",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 40,
@@ -747,10 +786,11 @@ const games = [
     "time": "15분",
     "rule": "고양이 꼬리를 조립하고 손에 난 구멍에 맞춰 접시를 끼워요. 돌림판을 돌려 나온 포크 위치에 따라 접시에 채소를 올려요. 자기 채소를 가장 먼저 전부 접시에 올리면 이겨요.",
     "effect": "돌림판 결과에 따라 채소를 빠르게 올리는 과정에서 반응 속도와 소근육 조절력이 자연스럽게 길러져요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fouUA6Enym",
     "pros": "귀여운 고양이 피규어, 규칙 간단, 온 가족 파티 게임",
     "caution": "접시 구멍 소형 부품 주의, 조립 다소 복잡",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 41,
@@ -765,10 +805,11 @@ const games = [
     "time": "20분",
     "rule": "카드 80장(앞뒤 각각 160가지 사물 이미지)을 활용해요. 사물의 무늬나 조합에서 얼굴을 발견하고, 눈·코·입 자리에 카드를 배치해 얼굴표정을 만들어요. 분류놀이, 내 얼굴 만들기, 역할놀이 등 다양하게 활용할 수 있어요.",
     "effect": "160가지 사물 이미지를 조합해 수백 가지 얼굴을 만드는 과정에서 창의력, 섬세한 관찰력, 감정을 읽는 능력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fouZrnx8we",
     "pros": "다양한 표정 만들기 가능, 교구로도 활용, 아이가 직접 설명하며 감정 표현 유도",
     "caution": "카드 활용도 처음엔 낮을 수 있어 부모 안내 필요",
-    "solo": true
+    "solo": true,
+    "best": false
   },
   {
     "no": 42,
@@ -784,10 +825,11 @@ const games = [
     "time": "20분",
     "rule": "각자 색깔 육각형 블록 세트를 받아요. 자기 시작점에서 블록을 한 칸씩 선으로 이어지게 놓아요. 상대 진로를 막으면서 내 영역을 넓혀가요. 더 이상 블록을 놓을 수 없으면 게임 종료, 남은 블록 칸이 가장 적은 플레이어가 승리해요.",
     "effect": "블록을 어디에 놓을지 예측하고 상대를 막는 과정에서 공간지각력과 전략적 사고력이 집중적으로 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fou36wgUgK",
     "pros": "국내 랭킹 1위 수상경력, 1~6인 모두 가능, 퍼즐북 포함으로 혼자서도 즐김",
     "caution": "블록 분실 주의, 처음엔 규칙 파악 시간 필요",
-    "solo": true
+    "solo": true,
+    "best": true
   },
   {
     "no": 43,
@@ -803,10 +845,11 @@ const games = [
     "time": "15분",
     "rule": "원형 카드에는 동물 그림이 여러 개 그려져 있어요. 두 카드 사이에 반드시 1개의 같은 그림이 있어요. 다양한 미니게임 방식(탑쌓기, 우물, 뜨거운 감자 등)으로 같은 그림을 가장 빨리 찾아 외치는 사람이 카드를 가져가요.",
     "effect": "두 카드에서 같은 그림을 순간적으로 찾는 과정에서 세밀한 관찰력과 순발력이 빠르게 길러져요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fovaqlOnym",
     "pros": "귀여운 동물 테마, 다양한 게임방식, 가족·파티 최적, 짧은 시간에 즐김",
     "caution": "그림 작아 어린 아이 다소 어려움, 카드 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 44,
@@ -822,10 +865,11 @@ const games = [
     "time": "15분",
     "rule": "2명이 각자 발사대와 똥 6개를 가져요. 발사대에 똥을 올리고 레버를 눌러 변기 안으로 슛! 동시에 쏘거나 번갈아 가며 쏴서 가장 먼저 똥을 다 넣은 사람이 승리해요.",
     "effect": "조준하고 발사하는 순간 집중력과 순발력이 길러지고, 똥 개수를 세며 수 개념도 자연스럽게 자극돼요.",
-    "coupang": null,
+    "coupang": "https://www.coupang.com/vp/products/9000123945?itemId=26374418707&vendorItemId=93351048925&pickType=COU_PICK&q=%EC%8A%88%ED%8C%85%EB%B3%80%EA%B8%B0+%EB%B3%B4%EB%93%9C%EA%B2%8C%EC%9E%84&searchId=23f201292675046&sourceType=search&itemsCount=36&searchRank=2&rank=2&traceId=mrldgpps",
     "pros": "웃음 유발 강한 테마, 규칙 초간단, 아이들 집중력 쑥쑥, 온 가족 함께",
     "caution": "2인 전용, 똥 조각 분실 주의, 발사 소음 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 45,
@@ -841,10 +885,11 @@ const games = [
     "time": "20분",
     "rule": "김밥 주문 카드를 뽑아요. 카드에 표시된 재료(색깔, 모양)를 확인하고, 나무 김밥롤에 맞는 재료를 순서대로 조립해요. 완성 후 종을 쳐서 먼저 끝낸 사람이 이겨요.",
     "effect": "주문대로 재료를 찾아 김밥을 조립하는 과정에서 소근육 조절력, 공간 배치 능력, 색깔·모양 시지각이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fovi9CIuvk",
     "pros": "역할놀이 감성, 규칙 쉬워 금방 몰입, 나무 소재 촉감 좋음",
     "caution": "작은 조각 있어 영아 주의, 1~2인 전용",
-    "solo": true
+    "solo": true,
+    "best": true
   },
   {
     "no": 46,
@@ -860,10 +905,11 @@ const games = [
     "time": "15분",
     "rule": "레시피 카드 1장을 선택해요. 카드에 나온 재료 이름을 읽고, 몇 개인지 세어 냄비에 하나씩 올려요. 레시피 3가지를 완성하면 게임 종료예요. 승자 없이 함께 수프를 완성하는 협동 게임이에요.",
     "effect": "레시피를 인지하고 재료를 분류하며 개수를 세는 과정에서 수인지, 분류 능력, 소근육 조절력이 자연스럽게 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fovnbRHoce",
     "pros": "2세부터 가능, 역할놀이와 연계, 규칙 직관적, 원목 소재 안심",
     "caution": "원목스푼 흰 옷에 묻힐 수 있음, 승자 없는 구조가 경쟁 원하는 아이엔 아쉬울 수 있음",
-    "solo": true
+    "solo": true,
+    "best": false
   },
   {
     "no": 47,
@@ -879,10 +925,11 @@ const games = [
     "time": "15분",
     "rule": "1:1 대결 보드게임이에요. 두더지 버튼을 망치로 두드리거나, 라운드별 미션(빠르게 누르기, 특정 색 두더지만 치기 등)에 따라 게임이 진행돼요. 코인을 누적하여 더 많이 모은 팀이 승리해요.",
     "effect": "빠르게 반응하고 망치를 조작하는 과정에서 순발력과 집중력이 길러지고, 두더지 수를 세며 수 감각도 자극돼요.",
-    "coupang": null,
+    "coupang": "https://www.coupang.com/vp/products/7709547202?itemId=20662491496&vendorItemId=87685858273&q=%EB%91%90%EB%8D%94%EC%A7%80%EB%B0%B0%ED%8B%80&searchId=b46255234730032&sourceType=search&itemsCount=36&searchRank=0&rank=0&traceId=mrldl3mn",
     "pros": "1:1 대결로 경쟁심 자극, 전동 동작으로 박진감, 온 가족 함께",
     "caution": "2인 전용, 배터리 필요, 소음 있어 조용한 환경에 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 48,
@@ -898,10 +945,11 @@ const games = [
     "time": "20분",
     "rule": "테트리스 블록을 상단 슬라이드 입구에 넣어 세워진 보드에 끼워요. 빈칸 없이 채우거나, 도형 만들기·패턴 만들기 등 다양한 방식으로 즐길 수 있어요. 혼자서도 여럿이서도 가능해요.",
     "effect": "다양한 모양의 블록을 빈칸에 끼워 맞추는 과정에서 공간지각력과 창의력, 집중력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fovDe5Iumi",
     "pros": "#창의력발달 #인내심향상, 혼자서도 집중 플레이 가능, 적당한 블록 크기",
     "caution": "블록 분실 주의, 처음엔 보호자 안내 필요",
-    "solo": true
+    "solo": true,
+    "best": true
   },
   {
     "no": 49,
@@ -916,10 +964,11 @@ const games = [
     "time": "30분",
     "rule": "보드판 위에서 주사위를 굴려 이동해요. 숫자 주사위 2개와 부호 주사위 1개를 사용해 덧셈·뺄셈 문제를 풀어요. 화산 발사기 이벤트 등이 있어요. 최대 20까지 세고, 덧셈뺄셈을 연습할 수 있어요. 먼저 결승점 도달 시 승리예요.",
     "effect": "라운드마다 덧셈·뺄셈을 풀며 이동하는 과정에서 수인지와 기초 연산 능력, 논리적 사고력이 자연스럽게 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fovL9AvbhY",
     "pros": "수학 기초 연산 교육 효과, 게임으로 즐겁게 학습, 화산 이벤트로 긴장감",
     "caution": "영문 게임(한글 가이드 필요), 6세 미만엔 어려울 수 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 50,
@@ -935,10 +984,11 @@ const games = [
     "time": "30분",
     "rule": "비밀번호 카드를 세워 4자리 비밀번호를 설정해요. 플레이어들이 돌아가며 카드에 번호를 눌러 힌트를 얻고, 비밀번호 카드로 숫자를 좁혀가요. 4개의 비밀번호를 모두 찾아 방탈출에 성공하면 이겨요.",
     "effect": "숨겨진 비밀번호를 단서로 추론하고 좁혀가는 과정에서 논리적 추리력, 사고력, 협동심이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fovTRrOMQm",
     "pros": "흔한남매 캐릭터로 흥미 유발, 추리 요소 재미, 온 가족 함께, 재플레이 가능",
     "caution": "7세 미만은 숫자 추론 어려움, 비밀번호 설정 시 초기 설명 필요",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 51,
@@ -954,10 +1004,11 @@ const games = [
     "time": "15분",
     "rule": "선물 타일 더미에서 타일을 골라요. 내가 가질까, 상대에게 선물할까 선택해요. 플러스 선물은 높은 점수, 마이너스 선물은 낮은 점수예요. 익스트림 타일로 역전이 가능해요. 게임 오버 타일이 5장 쌓이면 게임 종료예요.",
     "effect": "선물을 고르고 주고받는 과정에서 상대 표정과 눈빛을 읽는 관찰력, 언어 소통 능력, 전략적 판단력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fovZzZwUN2",
     "pros": "규칙 초간단, 가족·파티 게임 최적, 심리전 재미, 익스트림 타일로 역전 가능",
     "caution": "마이너스 카드 개념 어린 아이엔 다소 어려울 수 있음, 계산이 필요한 점수 집계",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 52,
@@ -972,10 +1023,11 @@ const games = [
     "time": "15분",
     "rule": "샌드위치 카드를 쌓아요. 양옆 카드의 숫자를 더하거나 빼서 가운데 카드 숫자와 같아지면 '매쓰!'를 외쳐 카드를 가져가요. 카드를 가장 많이 모은 사람이 이겨요.",
     "effect": "카드 숫자를 순간적으로 더하거나 빼는 과정에서 기초 연산 능력과 수인지, 빠른 집중력이 동시에 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fowbSJlOKq",
     "pros": "연산 학습 효과, 규칙 직관적, 빠른 진행으로 지루하지 않음",
     "caution": "덧셈뺄셈 개념 필요, 숫자 인식 어려운 연령엔 보호자 지원 필요",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 53,
@@ -991,10 +1043,11 @@ const games = [
     "time": "15분",
     "rule": "게임판 가운데 4칸을 비우고 나머지 칸에 카멜레온 칩을 놓아요. 차례마다 칩을 이동하며 자신이 원하는 색 칩을 모아 세트를 만들어요. 같은 색 4개 또는 무늬가 모두 다른 같은 색 4개가 세트가 되면 왕 카드 1장으로 교환해요. 4가지 색 왕카드를 먼저 모으면 이겨요.",
     "effect": "칩 이동 경로를 예측하고 상대를 차단하는 과정에서 전략적 사고력과 집중력이 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fowl1yP5pI",
     "pros": "규칙 파악 후 빠른 진행, 온 가족 함께, 색깔 매칭 재미",
     "caution": "처음엔 규칙 이해 다소 필요, 4세는 보호자 도움 권장",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 54,
@@ -1009,10 +1062,11 @@ const games = [
     "time": "20분",
     "rule": "피자 재료 카드와 주문 카드를 준비해요. 주사위를 굴려 나온 수만큼 재료 타일을 집어요. 주문 카드에 맞게 피자를 완성하며 수를 더하고 빼요. 피자를 완성할 때마다 점수를 얻고 가장 많이 모은 사람이 이겨요.",
     "effect": "피자 재료를 세고 더하고 빼는 과정에서 수인지와 기초 연산 능력이 즐겁고 자연스럽게 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fowqFopb7Q",
     "pros": "수 개념 학습 효과, 피자 테마로 흥미 유발, 규칙 직관적",
     "caution": "덧셈뺄셈 개념 필요, 연산 속도 아이마다 차이 있음",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 55,
@@ -1028,10 +1082,11 @@ const games = [
     "time": "20분",
     "rule": "신데렐라 테마 메모리 보드게임이에요. 카드를 뒤집어 섞어 놓아요. 차례마다 2장씩 뒤집어 짝이 맞으면 가져가요. 기억한 카드 위치를 활용해 가장 많이 모은 사람이 이겨요.",
     "effect": "카드 위치를 기억하고 짝을 찾는 과정에서 작업기억력과 집중력, 관찰력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foww6hmwQS",
     "pros": "신데렐라 테마로 흥미 유발, 메모리게임 기초 입문, 규칙 쉬움",
     "caution": "카드 수 많으면 어린 아이엔 다소 어려움, 카드 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 56,
@@ -1047,10 +1102,11 @@ const games = [
     "time": "30분",
     "rule": "그림자 퍼즐판 10개를 사용해요. 동물/과일/교통수단/일상생활용품 그림이 그려진 원목 조각과 그림자 판을 활용해요. 목적에 따라 분류 맞추기, 예시카드 보고 조각 찾기, 메모리 게임 등 3가지 방식으로 즐길 수 있어요.",
     "effect": "그림자를 보고 실제 이미지를 연결하는 과정에서 시지각 능력과 관찰력, 집중력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fowCQUCfYq",
     "pros": "다양한 활용 방법, 작업치료 교구로도 사용, KC인증 안전 소재",
     "caution": "조각 분실 주의, 처음엔 보호자와 함께 규칙 안내 필요",
-    "solo": true
+    "solo": true,
+    "best": false
   },
   {
     "no": 57,
@@ -1066,10 +1122,11 @@ const games = [
     "time": "15분",
     "rule": "뒤집힌 개구리들을 탁자에 놓아요. 손가락으로 개구리 꼬리를 누르면 개구리가 튀어 올라요. 통 안으로 가장 많이 넣은 사람이 이겨요.",
     "effect": "개구리를 통 안에 넣으려고 조준하는 과정에서 순발력과 소근육 조절력, 집중력이 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fowMkRQdjM",
     "pros": "단순하고 즉각적인 재미, 규칙 초간단, 온 가족 함께",
     "caution": "개구리 소품 분실 주의, 튀어 오르는 조각 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 58,
@@ -1085,14 +1142,15 @@ const games = [
     "time": "10분",
     "rule": "한글 자음·모음 타일을 가지고 4가지 방식으로 즐겨요. 1) 라온 재결합: 기존 단어를 쪼개 새 단어 만들기, 2) 가로세로 게임: 타일로 단어를 만들어 연결하기, 3) 초성 게임: 주제에 맞는 초성 단어 빠르게 대기, 4) 높은 수 게임: 가장 많은 타일을 쓰는 단어 만들기. 3분 모래시계 사용.",
     "effect": "한글 자음과 모음 타일로 다양한 방식으로 단어를 만드는 과정에서 언어 능력과 어휘력, 사고력이 즐겁게 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fowXAuangy",
     "pros": "한글 학습 효과 탁월, 4가지 게임 방식으로 질리지 않음, 국산 게임",
     "caution": "모음 조합이 어려울 수 있어 5세엔 보호자 지원 필요, 타일 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 59,
-    "name": "스너그 버그 러그",
+    "name": "러그 쏙 벌레",
     "ageMin": 4,
     "ageMax": 7,
     "purpose": [
@@ -1104,10 +1162,11 @@ const games = [
     "time": "15분",
     "rule": "게임판(러그)에 형형색색 벌레들을 올려요. 주사위를 굴려 나온 속성(색·도형·숫자·눈 크기)에 맞는 벌레를 찾아 보드 아래로 넣어요. 냄새나는 벌레가 나오면 모두 보드 위에 올려요. 벌레를 모두 러그 밑으로 보내면 협동 승리예요.",
     "effect": "속성을 관찰하고 분류하는 과정에서 색인지·수인지·도형 인식이 발달하며, 협동게임을 통해 협력 습관도 자연스럽게 길러져요.",
-    "coupang": null,
+    "coupang": "https://www.coupang.com/vp/products/5797106990?itemId=12923660883&vendorItemId=80188259252&q=%EB%9F%AC%EA%B7%B8+%EC%8F%99+%EB%B2%8C%EB%A0%88&searchId=f5cdf3d63099603&sourceType=search&itemsCount=36&searchRank=2&rank=2&traceId=mrleew21",
     "pros": "협동게임으로 경쟁 스트레스 없음, FSC 친환경 소재, 3단계 난이도 조절",
     "caution": "냄새나는 벌레 등장 시 역전되어 아이에 따라 당황할 수 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 60,
@@ -1123,10 +1182,11 @@ const games = [
     "time": "10분",
     "rule": "연못 중앙에 색깔 구슬(사탕)을 뿌려요. 각자 개구리 색깔을 정해요. 신호에 맞춰 모두 개구리 버튼을 눌러 사탕을 먹어요. 사탕이 다 떨어지면 게임 종료, 가장 많이 먹은 사람이 이겨요.",
     "effect": "버튼을 타이밍에 맞게 눌러 구슬을 먹는 과정에서 순발력과 집중력, 소근육 조절력이 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foxfvfRglM",
     "pros": "규칙 초간단, 색깔 개구리로 흥미 유발, 준비 빠름, 온 가족 함께",
     "caution": "구슬 삼킴 위험 있어 어린 아이 주의 필수, 구슬 보관함 필요",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 61,
@@ -1142,14 +1202,15 @@ const games = [
     "time": "10분",
     "rule": "움직이는 컨베이어 벨트 위에 카드와 똑같은 햄버거를 빠르게 쌓아요. 빵, 패티, 채소, 치즈 등 재료가 벨트를 타고 흘러가기 때문에 정확한 타이밍에 재료를 집어야 해요. 카드와 똑같이 완성한 햄버거를 먼저 만든 사람이 이겨요.",
     "effect": "움직이는 벨트 위에서 재료를 순서에 맞춰 재빠르게 쌓는 과정에서 순발력과 소근육 조절력, 집중력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foyy1m1EqW",
     "pros": "규칙 간단해 바로 이해, 온 가족이 가볍게 즐기기 좋음, 휴대 간편해 외출시에도 활용",
     "caution": "손빠르기 위주라 너무 어린 아이는 다소 어려울 수 있음, 작은 부속품 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 62,
-    "name": "점핑 스파이더 거미줄걸기",
+    "name": "점핑 스파이더 거미줄게임",
     "ageMin": 4,
     "ageMax": 7,
     "purpose": [
@@ -1161,10 +1222,11 @@ const games = [
     "time": "15분",
     "rule": "모래시계를 돌리고 거미의 꼬리 부분을 눌러 거미를 튕겨 날려요. 거미줄 너머 목표 지점에 거미를 많이 보낼수록 좋아요. 정해진 시간 안에 가장 많은 거미를 거미줄에 붙인 사람이 승리해요.",
     "effect": "손가락으로 꼬리를 누르고 목표를 조준해 튕기는 과정에서 소근육 조절력과 집중력, 공간지각력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foyDSkMP2y",
     "pros": "규칙 단순해 어린 동생도 금방 이해, 손가락 조작 연습이 자연스럽게 됨, 짧은 시간에 온 가족이 즐기기 좋음",
     "caution": "지지대·거미줄 부품이 약한 편이라 힘주어 다루면 파손 우려, 작은 부품 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 63,
@@ -1180,10 +1242,11 @@ const games = [
     "time": "10분",
     "rule": "펭귄 타워 링을 쌓고 그 위에 펭귄을 차례로 올려요. 차례마다 아래쪽 링을 살살 빼서 위로 옮기며 타워를 유지해요. 펭귄을 떨어뜨리면 지는 균형 잡기 게임이에요.",
     "effect": "흔들리는 타워에서 링을 조심스럽게 빼고 옮기는 과정에서 소근육 조절력과 집중력, 균형감각이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foyJPBUwpM",
     "pros": "규칙이 단순해서 어린 아이도 쉽게 참여, 소근육·집중력 발달에 도움, 친구들과 함께 하기에도 좋음",
     "caution": "6세 이하는 균형 맞추기를 다소 어려워할 수 있음, 플라스틱 소재라 내구성은 보통 수준",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 64,
@@ -1198,10 +1261,11 @@ const games = [
     "time": "20분",
     "rule": "같은 색깔 숫자 타일 3개의 합이 10이 되거나, 3~4개로 20을 만들어 내려놓아요. 등록된 타일에는 차례마다 같은 색 숫자를 이어 붙일 수 있어요. 가장 먼저 자신의 타일을 모두 사용한 사람이 승리해요.",
     "effect": "숫자 타일로 합이 10과 20이 되는 조합을 찾는 과정에서 암산 능력과 수 감각, 논리적 사고력이 즐겁게 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foyOiqESbc",
     "pros": "연산 속도와 정확도가 빨라짐, 단순 암기를 넘어 전략적 사고력도 길러짐, 가족이 함께 수학 공부하듯 즐길 수 있음",
     "caution": "조합이 어려운 어린 연령은 보호자 도움 필요, 타일 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 65,
@@ -1217,10 +1281,11 @@ const games = [
     "time": "20분",
     "rule": "과자집 모양 보드에 사탕 타일을 연결해 가며 마녀로부터 도망쳐요. 타일 가장자리에 표시된 점의 개수만큼 말을 이동시켜요. 모두가 힘을 합쳐 마녀에게 잡히기 전에 탈출하면 다같이 승리하는 협동게임이에요.",
     "effect": "타일을 연결하고 점 개수를 계산해 말을 이동시키는 과정에서 수 감각과 전략적 사고력이 발달하고, 다같이 협력해 목표를 이루며 협동심도 자연스럽게 길러져요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foySPQmBki",
     "pros": "온 가족이 함께 이기는 협동 구조라 다툼 없이 즐김, 동화 속 교훈을 자연스럽게 배움, 규칙 이해가 쉬워 처음 보드게임으로도 추천",
     "caution": "6세 이하는 다소 어려워할 수 있음, 작은 타일 부품 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 66,
@@ -1236,10 +1301,11 @@ const games = [
     "time": "10분",
     "rule": "상어 입 위에 금화를 쌓고 화살표 룰렛을 돌려 나온 명령대로 금화를 조심히 가져와요. 금화를 너무 많이 가져가거나 특정 칸에 걸리면 상어가 갑자기 튀어올라요. 상어가 튀어나오기 전까지 금화를 가장 많이 모은 사람이 승리해요.",
     "effect": "상어가 언제 튀어오를지 모르는 긴장감 속에서 금화를 조심스럽게 가져오는 과정에서 소근육 조절력과 판단력, 집중력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foyXoYPoAK",
     "pros": "규칙 설명 없이도 바로 이해할 만큼 간단함, 상어가 튀어나오는 순간의 긴장감과 웃음, 가족 파티 게임으로 반복해도 즐거움",
     "caution": "작은 금화 부품 삼킴 위험 있어 어린 아이는 보호자와 함께, 운 요소가 강해 승부욕 강한 아이는 다소 아쉬워할 수 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 67,
@@ -1255,10 +1321,11 @@ const games = [
     "time": "15분",
     "rule": "드래곤 모양 가위(스쿠퍼)로 보석을 집어 와요. 회전판을 돌려 나온 색깔의 보석을 찾아 모아요. 다섯 가지 색깔의 보석을 가장 먼저 모은 사람이 승리해요.",
     "effect": "드래곤 가위를 쥐고 보석을 정교하게 집는 과정에서 눈과 손의 협응력과 소근육이 발달하고, 색깔을 구분하고 개수를 세면서 색인지력과 수인지력도 함께 길러져요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foy2142sTI",
     "pros": "보석을 직접 집는 재미로 흥미 유발, 색상별 5가지×4종으로 수세기 연습에 효과적, 부모와 함께 하기 좋은 난이도",
     "caution": "작은 보석 부품 삼킴 위험 있어 사용 연령 미만 아이는 주의(choking hazard 표기), 보석 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 68,
@@ -1274,10 +1341,11 @@ const games = [
     "time": "10분",
     "rule": "나무 퍼즐 조각을 돌리고 끼워서 빨간 모자가 늑대를 피해 할머니 집까지 갈 수 있는 길을 만들어요. 문제 카드에 따라 난이도를 조절할 수 있어요. 혼자서 풀어보는 논리 퍼즐 게임이에요.",
     "effect": "퍼즐 조각을 돌리고 끼워 길을 완성하는 과정에서 공간지각력과 집중력, 문제해결을 위한 사고력이 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foy9j9im6u",
     "pros": "혼자서도 충분히 몰입해서 즐김, 난이도 카드로 단계별 성장 가능, 동화책이 함께 있어 이야기로도 흥미 유발",
     "caution": "너무 어린 연령은 보호자의 초기 설명이 필요, 작은 퍼즐 조각 분실 주의",
-    "solo": true
+    "solo": true,
+    "best": true
   },
   {
     "no": 69,
@@ -1293,10 +1361,11 @@ const games = [
     "time": "15분",
     "rule": "바를 눌러 볼링핀을 가지런히 세워요. 거북이의 방향과 각도를 조절한 뒤 뒤로 당겼다 놓아 발사해요. 볼링핀을 가장 많이 쓰러뜨린 사람이 승리해요.",
     "effect": "거북이를 당기고 조준해 발사하는 과정에서 소근육 조절력과 집중력, 손과 눈의 협응력이 발달해요.",
-    "coupang": null,
+    "coupang": "https://www.coupang.com/vp/products/6209321814?itemId=12368256457&vendorItemId=79638054713&pickType=COU_PICK&q=%EA%B1%B0%EB%B6%81%EC%9D%B4+%EB%B3%BC%EB%A7%81&searchId=3dd2d10b9850210&sourceType=search&itemsCount=36&searchRank=0&rank=0&traceId=mrlfg994",
     "pros": "컴팩트한 사이즈로 보관·휴대가 편함, 규칙이 쉬워 어린아이도 바로 참여, 가족 모임이나 캠핑에서 활용도 높음",
     "caution": "볼링핀 꽂이가 헐거워지면 잘 서지 않을 수 있음, 작은 볼링공·핀 분실 주의",
-    "solo": true
+    "solo": true,
+    "best": false
   },
   {
     "no": 70,
@@ -1312,10 +1381,11 @@ const games = [
     "time": "15분",
     "rule": "얼음판을 조립하고 그 위에 펭귄을 올려요. 차례마다 망치로 얼음 블록을 하나씩 살살 깨서 빼내요. 펭귄을 얼음판 아래로 떨어뜨리는 사람이 지는 게임이에요.",
     "effect": "펭귄을 떨어뜨리지 않도록 얼음 블록을 조심스럽게 골라 빼는 과정에서 소근육 조절력과 집중력, 균형감각이 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fozjX1vOzk",
     "pros": "단순한 구조인데도 긴장감 있어 몰입도 높음, 직접 손으로 조작하는 재미가 큼, 가족 모두 짧은 시간에 함께 즐기기 좋음",
     "caution": "힘 조절을 못하면 얼음판 전체가 흔들려 일찍 끝날 수 있음, 얼음 블록 부품 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 71,
@@ -1331,10 +1401,11 @@ const games = [
     "time": "15분",
     "rule": "자석 말을 보드 양면에 붙여 이동시키며 보물을 찾는 협동게임이에요. 모래시계가 도는 동안 상대방과 대화하며 미로를 지나 카드 속 보물의 위치를 찾아요. 12개 보물을 모두 찾으면 라운드가 끝나요.",
     "effect": "미로 속 보물 위치를 추측하고 상대와 대화하며 협력하는 과정에서 공간지각력과 언어 표현력, 협동심이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://www.coupang.com/vp/products/7525639700?itemId=19747975102&vendorItemId=87549821602&q=%EB%82%9C%EC%9F%81%EC%9D%B4+%EB%B3%B4%EB%AC%BC%EC%B0%BE%EA%B8%B0&searchId=66d5c5393591050&sourceType=search&itemsCount=36&searchRank=2&rank=2&traceId=mrlfjoqj",
     "pros": "협동게임이라 다투지 않고 함께 즐길 수 있음, 가족이 서로 조언 나누며 즐기기 좋음, 처음 협동게임으로 추천할 만큼 직관적",
     "caution": "모래시계 시간이 짧게 느껴질 수 있어 연령에 따라 조절 필요, 벽 지지대 부품이 약한 편이라 힘주어 다루면 파손 우려",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 72,
@@ -1350,10 +1421,11 @@ const games = [
     "time": "15분",
     "rule": "각자 로지보드에 컬러볼을 배열해두고, 챌린지카드와 똑같이 색과 위치를 빠르게 맞춰요. 완성되면 손을 들고 '고고!'를 외쳐 정답이면 카드를 가져가요. 챌린지카드 10장을 먼저 모으면 승리해요.",
     "effect": "카드를 보고 빠르게 색과 위치를 맞추는 과정에서 순발력과 사고력, 집중력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fozuKYE096",
     "pros": "두뇌 자극 효과가 뛰어나 집중력과 사고력 향상에 도움, 빠른 진행으로 몰입도가 높음, 휴대가 간편해 외출 시에도 활용 가능",
     "caution": "카드와 구성품이 작아 분실 주의, 너무 어린 연령은 속도전이 부담될 수 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 73,
@@ -1369,10 +1441,11 @@ const games = [
     "time": "10분",
     "rule": "통 가운데 구멍에 피카츄 인형을 앉히고, 순서대로 돌아가며 스틱을 통에 꽂아요. 스틱을 꽂다가 피카츄 인형이 튀어 오르면 그 스틱을 꽂은 사람이 게임에서 져요.",
     "effect": "스틱을 살살 꽂을지 판단하는 과정에서 소근육 조절력과 순발력, 집중력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fozzRIC7b2",
     "pros": "피카츄 캐릭터로 아이 호응이 좋음, 2명부터 6명까지 다양한 인원으로 즐기기 좋음, 규칙이 간단해 빠르게 이해 가능",
     "caution": "스틱 색깔 종류가 적어 다소 단조로울 수 있음, 스틱 보관함이 다소 좁아 스틱이 빠질 수 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 74,
@@ -1387,10 +1460,11 @@ const games = [
     "time": "15분",
     "rule": "찜기 안에 숫자가 적힌 만두를 넣고 섞어요. 젓가락으로 만두를 집어 숫자 카드를 보고 더하거나 빼서 연산식을 만들어요. 고추 만두를 뽑으면 한 턴을 쉬고, 별 만두는 원하는 숫자로 바꿀 수 있어요.",
     "effect": "젓가락으로 만두를 집어 숫자를 더하고 빼는 과정에서 소근육과 수인지력, 덧셈뺄셈 능력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fozFlqDhyC",
     "pros": "소근육 발달과 연산 개념을 동시에 익힐 수 있음, 가족이 함께 즐기기 좋음, 젓가락질 연습에 효과적",
     "caution": "만두알이 작아 삼킴 주의가 필요함, 너무 어린 연령은 젓가락질이 서툴러 보호자 도움 필요",
-    "solo": true
+    "solo": true,
+    "best": false
   },
   {
     "no": 75,
@@ -1406,10 +1480,11 @@ const games = [
     "time": "15분",
     "rule": "카드에 나온 도형 패턴을 보고, 자신의 큐브 4개를 돌려 똑같은 모양을 가장 빨리 맞춰요. 가장 먼저 맞춘 사람이 카드를 가져가고, 6라운드 동안 카드를 가장 많이 모은 사람이 이겨요.",
     "effect": "카드 속 도형을 보고 큐브를 돌려 맞추는 과정에서 시지각능력과 공간지각력, 집중력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fozJdsMajc",
     "pros": "도형 감각과 공간지각력 향상에 효과적, 단순한 규칙이라 어린 아이도 쉽게 참여, 가족이 함께 빠르게 즐기기 좋음",
     "caution": "어린 연령은 큐브 회전을 어려워할 수 있어 보호자 도움 필요, 작은 큐브 조각 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 76,
@@ -1425,10 +1500,11 @@ const games = [
     "time": "15분",
     "rule": "캔디독 12마리를 섞어 테이블에 두고 각자 공원 카드를 받아요. 주사위 2개를 굴려 나온 색깔과 캔디독의 혀바닥 색깔이 일치하는 캔디독을 찾아 눌러 확인해요. 맞으면 가져가고, 6마리를 먼저 모으면 승리해요.",
     "effect": "주사위 색과 캔디독의 혀 색깔을 비교하며 찾는 과정에서 색인지력과 관찰력, 순발력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fozOjVMZiK",
     "pros": "캐릭터가 귀여워 아이들 호응이 좋음, 다른 사람의 캔디독도 가져올 수 있어 긴장감이 있음, 규칙이 단순해 어린 연령도 빠르게 적응",
     "caution": "두 주사위 색이 모두 맞아야 해서 운 요소가 있음, 캔디독 부품이 작아 삼킴 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 77,
@@ -1444,10 +1520,11 @@ const games = [
     "time": "10분",
     "rule": "사진 카드를 보고 동물 모형들을 카드와 똑같은 위치와 순서로 사파리 공원 보드 위에 배치해요. 60개의 단계별 문제를 차례로 풀어보는 혼자놀이 퍼즐게임이에요.",
     "effect": "사진 속 동물의 위치와 순서를 보고 그대로 재현하는 과정에서 시지각능력과 공간지각력, 문제해결을 위한 사고력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/fozYk4pbzM",
     "pros": "난이도가 단계별로 나뉘어 있어 성장에 맞춰 오래 즐길 수 있음, 혼자서도 집중해서 노는 시간이 길어짐, 첫 보드게임으로 추천할 만큼 직관적",
     "caution": "동물 모형 조각 분실 주의, 너무 어린 연령은 초반 규칙 안내가 필요함",
-    "solo": true
+    "solo": true,
+    "best": false
   },
   {
     "no": 78,
@@ -1462,10 +1539,11 @@ const games = [
     "time": "10분",
     "rule": "타일에는 색깔·모양·개수 세 가지 속성이 그려져 있어요. 속성이 모두 같거나 모두 다른 타일 3개를 찾으면 '세트'를 외치고 가져가요. 가장 많은 세트를 모은 사람이 이겨요.",
     "effect": "색깔과 모양, 개수의 같고 다름을 빠르게 비교하는 과정에서 관찰력과 색인지력, 사고력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foz3uYkMhM",
     "pros": "가족이 함께 즐거운 시간을 보내기 좋음, 규칙이 단순해 어린 연령도 빨리 적응, 2~4인 다양한 인원으로 활용 가능",
     "caution": "처음엔 세트 개념을 익히는 데 시간이 필요함, 몰입하면 시간 가는 줄 모를 정도로 길어질 수 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 79,
@@ -1481,10 +1559,11 @@ const games = [
     "time": "20분",
     "rule": "주사위를 굴려 자신의 돼지 말을 좁은 길을 따라 이동해요. 다른 돼지를 만나면 그 위에 올라타 함께 움직이고, 가장 먼저 결승점에 도착하는 돼지가 이겨요.",
     "effect": "주사위 숫자만큼 이동하고 다른 돼지 위에 올라타 균형을 맞추는 과정에서 사고력과 관찰력, 사회성이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foz8W1o6pw",
     "pros": "2명부터 7명까지 다양한 인원으로 즐기기 좋음, 규칙이 단순해 미취학 아동도 쉽게 적응, 돼지가 쌓이는 모습이 재미있어 몰입도가 높음",
     "caution": "원목 소재라 무게감이 있어 어린 아이는 다루기에 다소 무거울 수 있음, 작은 구성품 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 80,
@@ -1500,10 +1579,11 @@ const games = [
     "time": "30분",
     "rule": "타일 본배기를 누르면 타일 2개가 무작위로 나와요. 자신의 징고판에 해당 그림이나 단어가 있으면 빨리 이름을 외치고 타일을 가져와 징고판에 놓아요. 가장 먼저 징고판을 모두 채운 사람이 승리해요.",
     "effect": "그림과 영어 단어를 빠르게 찾아 외치는 과정에서 언어발달과 순발력, 관찰력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foAfaU4q7w",
     "pros": "한글과 영어 단어를 동시에 학습할 수 있음, 규칙이 쉬워 입문용 보드게임으로 추천, 2명부터 6~7명까지 다양한 인원이 함께 즐길 수 있음",
     "caution": "타일 종류가 많아 처음엔 익히는 데 시간이 필요함, 타일 디스펜서 작동이 다소 뻑뻑할 수 있음",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 81,
@@ -1519,10 +1599,11 @@ const games = [
     "time": "10분",
     "rule": "타일을 모두 펼쳐 놓아요. 주사위 2개를 굴려 나온 색깔과 모양이 정해지면, 해당하는 타일을 가장 빨리 찾아 손으로 짚어 가져와요. 둘 다 빈 면이 나오면 아무 타일이나 가져올 수 있어요. 가져온 타일을 차곡차곡 쌓아 가장 높이 쌓은 사람이 승리해요.",
     "effect": "주사위 색과 모양을 확인하고 맞는 타일을 빠르게 찾는 과정에서 순발력과 관찰력, 집중력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foAj7S8Npc",
     "pros": "규칙이 간단해서 빠르게 배우고 바로 즐길 수 있음, 순발력과 집중력 향상에 도움이 됨, 가족이 함께 짧은 시간에 신나게 즐기기 좋음",
     "caution": "손이 부딪히며 다칠 수 있어 다소 주의가 필요함, 작은 타일 분실 및 삼킴 주의",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 82,
@@ -1538,10 +1619,11 @@ const games = [
     "time": "15분",
     "rule": "키재기 벌레를 잔디 언덕에 머리만 보이도록 숨기고 빙글 돌려 섞어요. 회전판을 돌려 가리키는 색깔이 나오면 멈추고, 마음에 드는 벌레를 조심스럽게 뽑아요. 뽑은 벌레를 이어 붙여 가장 긴 키재기 벌레를 만드는 사람이 승리해요.",
     "effect": "벌레를 뽑고 길이를 비교하는 과정에서 색인지력과 손끝 소근육, 길이를 비교하는 수 감각이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://www.coupang.com/vp/products/222549009?itemId=697756165&vendorItemId=4782188401&pickType=COU_PICK&q=%EC%8F%99%EC%8F%99+%ED%82%A4%EC%9E%AC%EA%B8%B0+%EB%B2%8C%EB%A0%88&searchId=8b8224af3760013&sourceType=search&itemsCount=36&searchRank=0&rank=0&traceId=mrlg1ejz",
     "pros": "간단한 규칙으로 4세부터도 쉽게 적응, 손끝 소근육과 색깔 인지 발달에 도움, 가족이 함께 즐기기 좋은 단순한 놀이",
     "caution": "벌레 조각이 작아 분실 및 삼킴 주의, 같은 모양의 벌레가 많아 처음엔 헷갈릴 수 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 83,
@@ -1557,10 +1639,11 @@ const games = [
     "time": "15분",
     "rule": "미로 타일로 이루어진 5x5 미궁 속에서, 비밀 토큰 12개 중 하나를 공개하고 모두가 그 비밀을 찾아가요. 마법사 말을 미로 위로 이동시키며 길을 찾고, 가장 빨리 찾는 사람이 비밀 토큰을 가져가요. 비밀을 가장 많이 찾은 사람이 승리해요.",
     "effect": "움직이는 미로 속에서 길을 보고 마법사를 이동시켜 비밀을 찾는 과정에서 공간지각력과 기억력, 집중력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foAtoGBc5c",
     "pros": "5~6세 아이들도 간단하게 잘 즐길 수 있음, 미로 규모가 작아져 어린아이도 한눈에 길을 찾기 쉬움, 양면 타일로 난이도를 조절할 수 있어 오래 즐길 수 있음",
     "caution": "미로 타일과 작은 토큰이 많아 분실 주의, 너무 어린 연령은 처음엔 규칙 이해에 도움이 필요함",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 84,
@@ -1576,10 +1659,11 @@ const games = [
     "time": "10분",
     "rule": "투명한 도형판 여러 개를 돌리고 순서를 바꿔가며 겹쳐서, 문제집에 나온 코드와 똑같은 모양을 만들어요. 1번부터 100번까지 난이도가 점점 올라가는 100가지 문제가 수록되어 있어요.",
     "effect": "도형판을 관찰하고 색과 모양의 조합을 논리적으로 추론해 정답을 찾는 과정에서 관찰력과 공간지각력, 논리적 사고력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foAyB4n4EK",
     "pros": "혼자서도 오랫동안 집중해서 놀 수 있음, 난이도가 100단계로 세분화되어 성장에 맞춰 오래 사용 가능, 관찰력과 집중력 향상에 효과적",
     "caution": "난이도가 높아질수록 어려워져 보호자의 도움이 필요할 수 있음, 도형판과 받침대 등 작은 부품 분실 주의",
-    "solo": true
+    "solo": true,
+    "best": false
   },
   {
     "no": 85,
@@ -1595,10 +1679,11 @@ const games = [
     "time": "15분",
     "rule": "주사위를 굴려 나온 만큼 말을 이동해요. 도착한 칸에 간식이 있으면 낼름사우루스의 버튼을 눌러 혀로 간식을 가져와요. 정해진 두 가지 간식을 두 개씩 먼저 모으는 사람이 승리해요.",
     "effect": "주사위를 굴리고 원하는 간식이 나올 때 버튼을 누르는 과정에서 순발력과 색·종류를 구분하는 인지력, 차례를 기다리는 사회성이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foADR0heDc",
     "pros": "규칙이 간단해 5~6세부터 쉽게 적응, 짧은 시간 안에 순발력 있게 즐길 수 있음, 가족이나 여러 인원이 모여 함께 즐기기 좋음",
     "caution": "낼름 버튼 작동이 다소 뻑뻑할 수 있음, 작은 간식 토큰 분실 및 삼킴 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 86,
@@ -1614,10 +1699,11 @@ const games = [
     "time": "15분",
     "rule": "아이싱 카드와 스펀지 케이크 카드를 보고, 카드에 적힌 모양대로 케이크 블록을 빠르게 쌓아요. 먼저 완성하면 종을 쳐서 알리고, 가장 먼저 10층 케이크를 완성한 사람이 승리해요.",
     "effect": "카드를 보고 빠르게 블록을 맞춰 균형 있게 쌓는 과정에서 균형감각과 손끝 소근육, 순발력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foAJbFYq4W",
     "pros": "5세 아이도 쉽게 참여할 수 있음, 균형을 잡아 쌓는 재미에 몰입도가 높음, 짧은 시간 안에 가족이 함께 즐기기 좋음",
     "caution": "블록이 작아 분실 및 삼킴 주의, 욕심내어 높이 쌓다 무너지면 아쉬워할 수 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 87,
@@ -1633,10 +1719,11 @@ const games = [
     "time": "10분",
     "rule": "주사위를 굴려 나온 숫자만큼 흔들다리 위 해적 말을 이동시키거나, 바다에 떨어진 금화를 줍는 두 가지 행동 중 하나를 선택해요. 상어가 출발한 뒤 안전한 섬에 먼저 도착하면서 금화를 가장 많이 모은 사람이 승리해요.",
     "effect": "이동할지 금화를 주울지 매 순간 선택하는 과정에서 의사결정력과 순발력, 위험을 감수하는 판단력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foANUXAbxQ",
     "pros": "규칙이 간단해 6세부터 쉽게 즐길 수 있음, 가족이 함께 긴장감 있게 즐기기 좋음, 구성품이 아기자기해 몰입도가 높음",
     "caution": "흔들다리 부품이 약해 다소 조심히 다뤄야 함, 작은 부품 분실 및 삼킴 주의",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 88,
@@ -1652,10 +1739,11 @@ const games = [
     "time": "20분",
     "rule": "발사대에 코코넛을 올리고 당겨서 쏘아 바구니에 넣어요. 6개의 코코넛 바구니탑을 먼저 쌓은 사람이 승리해요. 술법 카드를 사용해 상대방을 방해할 수도 있어요.",
     "effect": "발사대를 조준해 코코넛을 쏘아 넣는 과정에서 손목 힘 조절과 소근육, 집중력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foATomHmcC",
     "pros": "4세 아이도 쉽게 즐길 수 있음, 간단한 규칙에 비해 짜릿한 즐거움이 큼, 가족이 다같이 신나게 즐기기 좋음",
     "caution": "코코넛(공)이 멀리 튕겨 나갈 수 있어 주변 정리가 필요함, 작은 부품 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 89,
@@ -1671,10 +1759,11 @@ const games = [
     "time": "25분",
     "rule": "자기 차례에 자원 모으기 또는 길을 따라 이동하기 중 하나를 선택해요. 모은 자원으로 임무를 완료하고 마을에 도착하면 다양한 효과의 타일을 얻을 수 있어요. 임무를 가장 많이 완료한 사람이 승리해요.",
     "effect": "자원을 모을지 이동할지 매 차례 선택하고 계획하는 과정에서 전략적 사고력과 자원관리 능력, 계획력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foAYOy040O",
     "pros": "8세 아이도 규칙을 쉽게 익혀 매뉴얼 없이 진행 가능, 상대방의 전략을 신경 쓰며 두뇌를 쓰는 재미가 있음, 온 가족이 함께 즐기기 좋은 전략게임",
     "caution": "어린 연령은 자원 배분 전략을 처음엔 어려워할 수 있어 보호자 도움이 필요할 수 있음, 구성품(토큰, 타일)이 많아 분실 주의",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 90,
@@ -1690,10 +1779,11 @@ const games = [
     "time": "15분",
     "rule": "주사위를 굴려 나온 장애물을 게임판에 놓으면 새로운 퍼즐이 만들어져요. 퍼즐 블록을 모두 올려 게임판을 빈틈없이 채우면 완성이에요. 혼자서도, 둘이서 누가 먼저 푸는지 대결해도 재미있어요.",
     "effect": "장애물을 보고 블록을 알맞게 배치해 퍼즐을 채우는 과정에서 공간지각능력과 문제해결력, 집중력이 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foA3jdIqTA",
     "pros": "단순해보이지만 풀수록 빠져드는 깊이가 있음, 주사위로 매번 다른 문제가 만들어져 반복해도 질리지 않음, 형제자매나 친구끼리 대결하며 즐기기 좋음",
     "caution": "난이도가 매번 달라 어떤 판은 쉽고 어떤 판은 까다로울 수 있음, 작은 블록과 장애물 조각 분실 주의",
-    "solo": true
+    "solo": true,
+    "best": false
   },
   {
     "no": 91,
@@ -1709,10 +1799,11 @@ const games = [
     "time": "15분",
     "rule": "카드 8장씩 나눠 손에 순서대로 든 채, 같은 숫자끼리 이웃해 있으면 함께 낼 수 있어요. 이미 나온 조합보다 더 강한 조합(같은 숫자면 더 많은 장수, 다른 숫자면 더 큰 숫자)을 내야 해요. 이기면 상대가 낸 카드를 가져와 원하는 위치에 끼워 넣어 손을 강화할 수 있고, 낼 카드가 없으면 카드를 한 장 뽑아 손에 추가해요. 마지막까지 카드가 남은 사람이 펭귄 토큰을 하나씩 잃고, 펭귄을 모두 잃으면 패배해요.",
     "effect": "카드 조합의 크기와 숫자를 비교해 더 강한 패를 즉각적으로 판단하는 과정에서 순발력과 의사결정력이 길러지고, 손에 쥔 카드 순서를 기억하며 다음 수를 계획하는 전략적 사고력도 함께 자라요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foH9EyFpQq",
     "pros": "규칙이 간단해 금방 익히고 반복해도 질리지 않음, 짧은 텐션감 있게 몰입할 수 있음, 가족·친구 여럿이 함께 즐기기 좋음",
     "caution": "처음에는 규칙이 헷갈릴 수 있어 설명 영상을 참고하면 도움이 됨, 카드 순서를 임의로 바꾸면 안 되므로 어린 아이는 보호자 도움이 필요할 수 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 92,
@@ -1728,10 +1819,11 @@ const games = [
     "time": "15분",
     "rule": "주사위를 굴려 나온 색과 가장 가까운 오리를 선택해 이동시켜요. 엄마 오리는 항상 맨 앞에 있어야 해요. 해 그림이 나오면 해가 한 칸씩 움직이고, 마지막 칸에 도착하면 해가 져서 게임이 끝나요. 해가 지기 전에 오리 가족 모두를 연못에 도착시키면 다같이 승리하는 협동 게임이에요.",
     "effect": "함께 협력해 목표를 해결하는 과정에서 협동심과 문제해결력이 길러지고, 주사위 색과 같은 오리를 찾아 움직이는 과정에서 색 구분 능력도 자라요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foIews0faS",
     "pros": "승패 없는 협동 게임이라 부담 없이 즐길 수 있음, 규칙이 간단해 3세부터 참여 가능, 온 가족이 함께 목표를 이뤄가는 재미가 있음",
     "caution": "구성품이 작아 삼킴 및 분실 주의, 어린 아이는 처음에 보호자의 규칙 설명이 필요할 수 있음",
-    "solo": true
+    "solo": true,
+    "best": false
   },
   {
     "no": 93,
@@ -1747,10 +1839,11 @@ const games = [
     "time": "15분",
     "rule": "게임판 6개를 둥글게 배치하고 물건 타일과 티미를 가운데 모아둬요. 자기 차례에 주사위를 굴려 나온 색과 같은 게임판에 티미를 올리고, 그 게임판에 어울리는 물건 타일을 찾아 끼워요. 빈칸에 맞지 않으면 타일을 다시 가운데로 돌려놓고 차례를 끝내요. 한 게임판에 물건 세 개를 채우면 나무토큰을 받고, 모든 물건이 제자리를 찾으면 게임이 끝나요.",
     "effect": "물건이 어울리는 자리를 찾아 정리하는 과정에서 분류 능력과 색 구분 능력이 길러지고, 작은 타일을 손으로 끼워 맞추며 소근육도 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foIiUuGqIe",
     "pros": "분류 활동으로 유익하다는 평가가 많음, 아이가 재미있어 하며 3~4세부터 가지고 놀기 좋음, 캐릭터가 귀여워 몰입도가 있음",
     "caution": "구성품 일부의 내구성이 기대보다 낮다고 느낄 수 있음, 반복 플레이 시 흥미가 줄어들 수 있어 다른 놀이와 병행 추천",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 94,
@@ -1766,10 +1859,11 @@ const games = [
     "time": "20분",
     "rule": "카드를 똑같이 나눠 갖고 뒷면이 위로 오게 쌓아 앞에 두세요. 시계 방향으로 돌아가며 자기 차례에 카드를 가운데로 가져가 재빨리 뒤집어요. 북, 가수, 심벌즈, 지휘자 토끼 연주자가 나오면 정해진 행동을 재빨리 해야 하고, 다른 연주자가 나오면 아무 행동도 하지 않아요. 행동을 틀리거나 못하면 그동안 가운데 쌓인 카드를 모두 가져와야 해요. 가장 먼저, 그리고 두 번째로 카드를 바닥낸 사람이 나오면 게임이 끝나고, 카드가 가장 많이 남은 사람이 져요.",
     "effect": "카드에 나온 연주자를 순간적으로 구별해 정해진 행동을 재빨리 따라 하는 과정에서 반응속도와 순발력이 길러지고, 여러 규칙을 동시에 기억하며 집중력도 함께 자라요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foInibYG4W",
     "pros": "규칙이 간단해 8세부터 쉽게 배우고 몰입할 수 있음, 온 가족·친구들과 함께 웃으며 즐기기 좋음, 짧은 라운드로 반복해도 질리지 않음",
     "caution": "카드 각인이 얇은 편이라 조심히 다뤄야 함, 흥분하면 다소 소란스러워질 수 있어 지도가 필요함",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 95,
@@ -1785,10 +1879,11 @@ const games = [
     "time": "15분",
     "rule": "파티션 중앙에 고양이 또는 쥐 피규어를 두고 8개의 타워 블록으로 둘러싼 뒤 6층까지 쌓아 올리고 파티션을 치워요. 주사위를 굴려 나온 색과 같은 색의 타워 블록을 손을 대지 않고 렌치나 망치로만 골라내 제거해요. 다른 색 블록을 떨어뜨리면 다음 차례 사람이 그 블록을 가져가고, 구조할 수 있겠다 싶으면 주사위 없이 '바꾸로'를 외치고 도구로 피규어를 꺼내요. 구조에 실패하면 자신의 블록을 상대에게 나눠줘요.",
     "effect": "손을 대지 않고 도구만으로 블록을 정교하게 다루는 과정에서 소근육과 균형감각이 발달하고, 탑이 무너지지 않을 조합을 판단하는 과정에서 문제해결력이 길러져요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foIrKgQgzk",
     "pros": "가족이 함께 웃으며 몰입해서 즐기기 좋음, 원목 소재라 아이 손에도 부드러움, 규칙이 간단해 금방 이해함",
     "caution": "작은 블록과 도구가 많아 분실 주의, 탑이 무너지지 않도록 조심스럽게 다뤄야 함",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 96,
@@ -1803,10 +1898,11 @@ const games = [
     "time": "15분",
     "rule": "보드벽과 트레이를 두 사람 사이에 세우고, 서로 보이지 않게 각자 보석과 돌을 격자판에 배치해요. 자기 차례에 트레이를 밀어 넣고 당겨 무작위 위치의 상대 보석이나 돌을 하나씩 확인하며, '노란 보석 근처엔 반드시 빨간 보석이 있다'는 단서를 활용해 상대의 빨간 보석 위치를 먼저 추리하는 사람이 승리해요.",
     "effect": "제한된 단서로 숨겨진 보석의 위치를 추론하는 과정에서 추리력과 논리적 사고력이 길러지고, 상대의 패턴을 기억하고 분석하는 집중력도 함께 자라요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foIwWMxDoa",
     "pros": "입체적인 구성과 로직이 결합돼 몰입도가 높음, 규칙이 간단해 아이와 어른이 대등하게 겨룰 수 있음, 짧은 시간에 긴장감 있게 즐기기 좋음",
     "caution": "작은 보석과 돌 부품이 많아 분실 및 삼킴 주의, 나이 어린 아이는 처음엔 보호자의 설명이 필요할 수 있음",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 97,
@@ -1822,10 +1918,11 @@ const games = [
     "time": "10분",
     "rule": "각자 코끼리를 하나씩 선택하고 구슬을 모두 박스 안에 담은 뒤, 도전 카드를 한 장 뒤집어 모두에게 보여줘요. 카드에 나온 대로 코끼리 코로 구슬을 빨아올려 자기 카드 그림과 같은 색·개수를 가장 먼저 채운 사람이 카드를 가져가요. 카드를 가장 많이 모은 사람이 승리해요.",
     "effect": "코끼리 코로 원하는 색의 구슬을 재빨리 빨아올리는 과정에서 소근육과 순발력이 길러지고, 카드 속 색과 개수를 확인하는 과정에서 색 구분 능력도 함께 자라요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foIBsDNdym",
     "pros": "코로 구슬을 빨아들이는 동작이 재미있어 아이들이 좋아함, 규칙이 간단해 반복해도 질리지 않음, 색 구분 놀이로 어린 아이도 참여하기 좋음",
     "caution": "작은 구슬이 많아 삼킴 및 분실 주의, 코끼리 코 부품이 헐거워질 수 있어 조심히 다뤄야 함",
-    "solo": false
+    "solo": false,
+    "best": true
   },
   {
     "no": 98,
@@ -1841,10 +1938,11 @@ const games = [
     "time": "10분",
     "rule": "각자 같은 색의 주사위 케이스를 가지고, 게임 카드를 한 장 오픈해 적힌 숫자·색 조합을 확인해요. 케이스를 흔들어 카드와 똑같은 주사위 눈을 만든 사람이 가장 먼저 종을 치면 그 카드를 가져가요. 게임이 끝날 때까지 카드를 가장 많이 모은 사람이 승리해요.",
     "effect": "원하는 눈이 나올 때까지 케이스를 재빠르게 흔들고 종을 먼저 치는 과정에서 순발력과 집중력이 길러지고, 반복되는 손동작 속에서 소근육 조절력도 함께 발달해요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foIFPlSoKG",
     "pros": "규칙이 간단해 누구나 쉽게 배울 수 있음, 반복해도 몰입감이 유지되고 집중력이 자연스레 올라감, 종을 치는 순간의 짜릿함이 있어 흥미가 지속됨",
     "caution": "인원이 많으면 케이스 흔드는 소리가 다소 시끄러울 수 있음, 승부욕이 과열되면 다칠 수 있어 주의가 필요함",
-    "solo": false
+    "solo": false,
+    "best": false
   },
   {
     "no": 99,
@@ -1860,10 +1958,11 @@ const games = [
     "time": "10분",
     "rule": "캠프파이어 모형을 가운데 놓고 마시멜로우들을 주변에 두고, 카드를 뒷면이 보이게 쌓아둬요. 각자 마시멜로우 꼬치를 하나씩 나눠 가진 뒤 차례가 되면 카드를 한 장 뽑아, 카드 속 그림과 똑같은 색의 마시멜로우를 찾아 하나 가져와 꼬치에 꽂아요. 승패 없이 각자 꼬치에 마시멜로우 4개를 다 꽂으면 놀이가 끝나요.",
     "effect": "카드 속 색을 보고 같은 마시멜로우를 찾아 꼬치에 꽂는 과정에서 색 구분 능력과 소근육 조절력이 길러지고, 승패 없이 함께 어울려 노는 과정에서 사회성도 자연스럽게 자라요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foIKntH44i",
     "pros": "아이와 하기 좋을 만큼 규칙이 간단하고 직관적임, 승패가 없어 아이가 부담 없이 즐길 수 있음, 아기자기하고 귀여운 구성으로 몰입도가 높음",
     "caution": "꼬치 끝이 뾰족하지 않은지 확인 후 사용하고 어린 아이는 보호자 지도 하에 사용, 작은 부품을 입에 넣지 않도록 지도 필요",
-    "solo": true
+    "solo": true,
+    "best": false
   },
   {
     "no": 100,
@@ -1879,10 +1978,11 @@ const games = [
     "time": "10분",
     "rule": "텃밭 판에 알록달록한 당근을 심고, 토끼 카드와 같은 색깔의 당근을 찾아 쏙 뽑아서 토끼 주머니에 넣어줘요. 네 마리 토끼의 주머니에 모두 당근을 채우면 다시 당근을 텃밭에 심어 반복해서 놀이할 수 있어요.",
     "effect": "같은 색의 당근을 찾아 뽑아 넣는 과정에서 색 구분 능력과 소근육 조절력이 길러지고, 어떤 당근이 어디 있었는지 기억하려 애쓰는 과정에서 기억력도 함께 자라요.",
-    "coupang": null,
+    "coupang": "https://link.coupang.com/a/foIPa0qo44",
     "pros": "알록달록한 구성으로 아이의 관심을 바로 사로잡음, 당근을 뽑는 손맛이 있어 반복해도 질리지 않음, 짧은 시간 안에 끝낼 수 있어 부담 없이 즐기기 좋음",
     "caution": "작은 당근 조각이 있어 삼킴 및 분실 주의, 어린 아이는 보호자와 함께 진행하는 것이 좋음",
-    "solo": true
+    "solo": true,
+    "best": false
   }
 ];
 
@@ -2091,31 +2191,44 @@ export default function App() {
                     <div key={g.no} style={{ background: "#fff", borderRadius: 10, border: "1.5px solid #E8E8E8", borderLeft: "3px solid #111", overflow: "hidden" }}>
                       <div style={{ padding: "14px 16px", cursor: "pointer" }} onClick={() => setExpanded(isOpen ? null : g.no)}>
                         <div style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
-                          <div style={{
-                            width: 56, height: 56, borderRadius: 8, flexShrink: 0,
-                            background: "#F3F3F3", border: "1px solid #EEE",
-                            display: "flex", alignItems: "center", justifyContent: "center",
-                            overflow: "hidden",
-                          }}>
-                            {!imgError[g.no] ? (
-                              <img
-                                src={`/games/${g.no}.jpg`}
-                                alt={g.name}
-                                onError={() => setImgError(prev => ({ ...prev, [g.no]: true }))}
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                              />
-                            ) : (
-                              <span style={{ fontSize: 20 }}>🎲</span>
+                          <div style={{ width: 56, flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", gap: 3 }}>
+                            <div style={{
+                              width: 56, height: 56, borderRadius: 8, position: "relative",
+                              background: "#F3F3F3", border: "1px solid #EEE",
+                              display: "flex", alignItems: "center", justifyContent: "center",
+                              overflow: "hidden",
+                            }}>
+                              {!imgError[g.no] ? (
+                                <img
+                                  src={`/games/${g.no}.jpg`}
+                                  alt={g.name}
+                                  onError={() => setImgError(prev => ({ ...prev, [g.no]: true }))}
+                                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                                />
+                              ) : (
+                                <span style={{ fontSize: 20 }}>🎲</span>
+                              )}
+                              {g.best && (
+                                <div style={{
+                                  position: "absolute", top: 0, left: 0,
+                                  background: "#111", color: "#FFC9B9",
+                                  fontSize: 8, fontWeight: 800, padding: "1px 4px 1px 3px",
+                                  borderBottomRightRadius: 6, letterSpacing: 0.2,
+                                }}>★ 베스트</div>
+                              )}
+                            </div>
+                            {g.solo && (
+                              <span style={{ padding: "1px 6px", borderRadius: 4, background: "#EAFBEE", color: "#4CAF50", fontSize: 8, fontWeight: 700, border: "1px solid #C8EFCF", whiteSpace: "nowrap" }}>🧍 혼자가능</span>
                             )}
                           </div>
                           <div style={{ flex: 1 }}>
                             <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 3 }}>
                               <div style={{ fontWeight: 800, fontSize: 14, color: "#111" }}>{g.name}</div>
-                              {g.solo && (
-                                <span style={{ padding: "1px 6px", borderRadius: 4, background: "#EAFBEE", color: "#4CAF50", fontSize: 9, fontWeight: 700, border: "1px solid #C8EFCF" }}>🧍 혼자가능</span>
-                              )}
                             </div>
-                            <div style={{ fontSize: 11, color: "#AAA", marginBottom: 6 }}>👥 {g.players} · ⏱ {g.time} · 🧒 {g.ageMin}세부터</div>
+                            <div style={{ display: "flex", justifyContent: "space-between", fontSize: 11, color: "#AAA", marginBottom: 6 }}>
+                              <div>👥 {g.players} · ⏱ {g.time}</div>
+                              <div>🧒 {g.ageMin}세부터</div>
+                            </div>
                             <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
                               {g.purpose.map(p => (
                                 <span key={p} style={{
@@ -2137,7 +2250,7 @@ export default function App() {
                       {isOpen && (
                         <div style={{ padding: "0 16px 16px", borderTop: "1px solid #F0F0F0" }}>
                           <div style={{
-                            marginTop: 12, width: "100%", aspectRatio: "4 / 3", borderRadius: 10,
+                            marginTop: 12, width: "100%", aspectRatio: "1 / 1", borderRadius: 10, position: "relative",
                             overflow: "hidden", background: "#F3F3F3", border: "1px solid #EEE",
                             display: "flex", alignItems: "center", justifyContent: "center",
                           }}>
@@ -2150,6 +2263,14 @@ export default function App() {
                               />
                             ) : (
                               <span style={{ fontSize: 32 }}>🎲</span>
+                            )}
+                            {g.best && (
+                              <div style={{
+                                position: "absolute", top: 8, left: 8,
+                                background: "#111", color: "#FFC9B9",
+                                fontSize: 11, fontWeight: 800, padding: "4px 9px",
+                                borderRadius: 5, letterSpacing: 0.3,
+                              }}>★ 다이스파파 베스트</div>
                             )}
                           </div>
                           {g.rule && (
@@ -2178,8 +2299,8 @@ export default function App() {
                           )}
                           {g.coupang ? (
                             <a href={g.coupang} target="_blank" rel="noopener noreferrer"
-                              style={{ display: "block", marginTop: 12, padding: "10px", borderRadius: 8, background: "#E60000", color: "#fff", textAlign: "center", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
-                              🛒 쿠팡에서 보기
+                              style={{ display: "block", marginTop: 12, padding: "10px", borderRadius: 8, background: "#FFC9B9", color: "#5A3B2E", textAlign: "center", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
+                              🛒 구매하러 가기
                             </a>
                           ) : (
                             <div style={{ marginTop: 12, padding: "10px", borderRadius: 8, border: "1.5px dashed #E0E0E0", color: "#CCC", textAlign: "center", fontSize: 12 }}>
