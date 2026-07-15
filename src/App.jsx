@@ -2061,8 +2061,8 @@ export default function App() {
                 아이 보드게임, 이제 헤매지 마세요
               </div>
               <div style={{ fontSize: 13, color: "#333", lineHeight: 1.7, fontWeight: 500 }}>
-                보드게임지도사 1급 아빠가 아이와 직접 해보고 검증한 게임을,<br />
-                필터 한 번으로 바로 찾아 보실 수 있어요.<br />
+                보드게임지도사 1급 아빠가 아이와 직접 해보고 검증한<br />
+                게임을, 필터 한 번으로 바로 찾아 보실 수 있어요.<br />
                 연령별 발달, 정확하게 맞춰드립니다.
               </div>
               <div style={{ display: "flex", gap: 8, marginTop: 10, flexWrap: "wrap" }}>
