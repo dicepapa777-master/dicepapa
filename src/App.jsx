@@ -2016,6 +2016,7 @@ export default function App() {
   const [selectedAge, setSelectedAge] = useState(null);
   const [selectedPurpose, setSelectedPurpose] = useState(null);
   const [soloOnly, setSoloOnly] = useState(false);
+  const [bestOnly, setBestOnly] = useState(false);
   const [showResult, setShowResult] = useState(false);
   const [expanded, setExpanded] = useState(null);
   const [imgError, setImgError] = useState({});
@@ -2025,10 +2026,11 @@ export default function App() {
   const filtered = games.filter(g =>
     (!selectedAge || (g.ageMin <= selectedAge && g.ageMax >= selectedAge)) &&
     (!selectedPurpose || g.purpose.includes(selectedPurpose)) &&
-    (!soloOnly || g.solo)
+    (!soloOnly || g.solo) &&
+    (!bestOnly || g.best)
   );
 
-  const reset = () => { setSelectedAge(null); setSelectedPurpose(null); setSoloOnly(false); setShowResult(false); setExpanded(null); };
+  const reset = () => { setSelectedAge(null); setSelectedPurpose(null); setSoloOnly(false); setBestOnly(false); setShowResult(false); setExpanded(null); };
 
   return (
     <div style={{ minHeight: "100vh", background: "#fff", fontFamily: "'Noto Sans KR', -apple-system, sans-serif", paddingBottom: "calc(80px + env(safe-area-inset-bottom))" }}>
@@ -2055,9 +2057,13 @@ export default function App() {
           <>
             {/* 소개 섹션 */}
             <div style={{ borderLeft: "3px solid #111", paddingLeft: 14, marginBottom: 28 }}>
+              <div style={{ fontSize: 15, color: "#111", lineHeight: 1.5, fontWeight: 800, marginBottom: 6 }}>
+                아이 보드게임, 이제 헤매지 마세요
+              </div>
               <div style={{ fontSize: 13, color: "#333", lineHeight: 1.7, fontWeight: 500 }}>
-                보드게임지도사 1급 아빠가<br />
-                연령별 발달에 맞는 게임을 추천합니다
+                보드게임지도사 1급 아빠가 아이와 직접 해보고 검증한 게임을,<br />
+                필터 한 번으로 바로 찾아 보실 수 있어요.<br />
+                연령별 발달, 정확하게 맞춰드립니다.
               </div>
               <div style={{ display: "flex", gap: 8, marginTop: 10, flexWrap: "wrap" }}>
                 {["보드게임지도사 1급", "보드게임 취미 7년", "5살 아들 아빠"].map(tag => (
@@ -2069,9 +2075,9 @@ export default function App() {
               </div>
             </div>
 
-            {/* STEP 1 */}
+            {/* 아이 나이 */}
             <div style={{ marginBottom: 28 }}>
-              <div style={{ fontSize: 14, fontWeight: 800, color: "#555", letterSpacing: 1.5, marginBottom: 10, textTransform: "uppercase" }}>STEP 1 · 아이 나이</div>
+              <div style={{ fontSize: 14, fontWeight: 800, color: "#555", marginBottom: 10 }}>👶 아이 나이</div>
               <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                 {ages.map(age => (
                   <button key={age} onClick={() => setSelectedAge(selectedAge === age ? null : age)} style={{
@@ -2085,9 +2091,9 @@ export default function App() {
               </div>
             </div>
 
-            {/* STEP 2 */}
+            {/* 발달 포인트 */}
             <div style={{ marginBottom: 24 }}>
-              <div style={{ fontSize: 14, fontWeight: 800, color: "#555", letterSpacing: 1.5, marginBottom: 10, textTransform: "uppercase" }}>STEP 2 · 발달 포인트</div>
+              <div style={{ fontSize: 14, fontWeight: 800, color: "#555", marginBottom: 10 }}>🎯 발달 포인트</div>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 6 }}>
                 {allPurposes.map(p => (
                   <button key={p} onClick={() => setSelectedPurpose(selectedPurpose === p ? null : p)} style={{
@@ -2107,7 +2113,7 @@ export default function App() {
               onClick={() => setSoloOnly(!soloOnly)}
               style={{
                 display: "flex", alignItems: "center", justifyContent: "space-between",
-                gap: 10, marginBottom: 16, cursor: "pointer",
+                gap: 10, marginBottom: 12, cursor: "pointer",
               }}
             >
               <span style={{ fontSize: 12.5, color: "#888" }}>
@@ -2125,20 +2131,41 @@ export default function App() {
               </span>
             </div>
 
+            <div
+              onClick={() => setBestOnly(!bestOnly)}
+              style={{
+                display: "flex", alignItems: "center", justifyContent: "space-between",
+                gap: 10, marginBottom: 16, cursor: "pointer",
+              }}
+            >
+              <span style={{ fontSize: 12.5, color: "#888" }}>
+                ★ 베스트 게임만 볼래요 <span style={{ color: "#CCC" }}>(선택)</span>
+              </span>
+              <span style={{
+                width: 38, height: 22, borderRadius: 11, position: "relative", flexShrink: 0,
+                background: bestOnly ? "#FF9478" : "#DDD", transition: "all 0.15s",
+              }}>
+                <span style={{
+                  position: "absolute", top: 2, left: bestOnly ? 18 : 2,
+                  width: 18, height: 18, borderRadius: "50%", background: "#fff",
+                  transition: "all 0.15s", boxShadow: "0 1px 2px rgba(0,0,0,0.2)",
+                }} />
+              </span>
+            </div>
+
             <button
-              onClick={() => { if (selectedAge || selectedPurpose || soloOnly) setShowResult(true); }}
-              disabled={!selectedAge && !selectedPurpose && !soloOnly}
+              onClick={() => { if (selectedAge || selectedPurpose || soloOnly || bestOnly) setShowResult(true); }}
+              disabled={!selectedAge && !selectedPurpose && !soloOnly && !bestOnly}
               style={{
                 width: "100%", padding: "15px", borderRadius: 10,
                 border: "2px solid #111",
-                background: (!selectedAge && !selectedPurpose && !soloOnly) ? "#F0F0F0" : "#111",
-                color: (!selectedAge && !selectedPurpose && !soloOnly) ? "#BBB" : "#fff",
+                background: (!selectedAge && !selectedPurpose && !soloOnly && !bestOnly) ? "#F0F0F0" : "#111",
+                color: (!selectedAge && !selectedPurpose && !soloOnly && !bestOnly) ? "#BBB" : "#fff",
                 fontWeight: 800, fontSize: 15,
-                cursor: (!selectedAge && !selectedPurpose && !soloOnly) ? "not-allowed" : "pointer",
+                cursor: (!selectedAge && !selectedPurpose && !soloOnly && !bestOnly) ? "not-allowed" : "pointer",
                 transition: "all 0.15s",
               }}
             >🎲 추천 보드게임 보기</button>
-            <p style={{ textAlign: "center", color: "#CCC", fontSize: 11, marginTop: 10 }}>연령 또는 목적 중 하나만 선택해도 됩니다</p>
           </>
         ) : (
           <>
@@ -2157,6 +2184,11 @@ export default function App() {
                 style={{ padding: "8px 14px", borderRadius: 7, background: "#fff", color: "#111", fontWeight: 800, fontSize: 12, textDecoration: "none", flexShrink: 0 }}>팔로우 →</a>
             </div>
 
+            {/* 쿠팡 파트너스 고지 */}
+            <div style={{ fontSize: 10.5, color: "#AAA", marginBottom: 14, lineHeight: 1.5 }}>
+              이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
+            </div>
+
             {/* 결과 헤더 */}
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 14, paddingBottom: 14, borderBottom: "1.5px solid #E8E8E8" }}>
               <div>
@@ -2167,6 +2199,8 @@ export default function App() {
                   {selectedPurpose && `${purposeEmoji[selectedPurpose] || "🎲"} ${selectedPurpose}`}
                   {(selectedAge || selectedPurpose) && soloOnly && " · "}
                   {soloOnly && "🧍 혼자놀이"}
+                  {(selectedAge || selectedPurpose || soloOnly) && bestOnly && " · "}
+                  {bestOnly && "★ 베스트"}
                   <span style={{ color: "#999", fontWeight: 400, marginLeft: 6 }}>{filtered.length}개</span>
                 </div>
               </div>
@@ -2210,10 +2244,11 @@ export default function App() {
                               )}
                               {g.best && (
                                 <div style={{
-                                  position: "absolute", top: 0, left: 0,
-                                  background: "#111", color: "#FFC9B9",
-                                  fontSize: 8, fontWeight: 800, padding: "1px 4px 1px 3px",
-                                  borderBottomRightRadius: 6, letterSpacing: 0.2,
+                                  position: "absolute", top: -4, left: -4,
+                                  background: "linear-gradient(135deg, #FFE9A8, #E8C04E 55%, #C9A227)",
+                                  borderRadius: 10, padding: "2px 6px",
+                                  boxShadow: "0 2px 4px rgba(0,0,0,0.25)",
+                                  fontSize: 9, color: "#6B5000", fontWeight: 900, whiteSpace: "nowrap",
                                 }}>★ 베스트</div>
                               )}
                             </div>
@@ -2225,7 +2260,7 @@ export default function App() {
                             <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 3 }}>
                               <div style={{ fontWeight: 800, fontSize: 14, color: "#111" }}>{g.name}</div>
                             </div>
-                            <div style={{ display: "flex", justifyContent: "space-between", fontSize: 11, color: "#AAA", marginBottom: 6 }}>
+                            <div style={{ fontSize: 11, color: "#AAA", marginBottom: 6 }}>
                               <div>👥 {g.players} · ⏱ {g.time}</div>
                               <div>🧒 {g.ageMin}세부터</div>
                             </div>
@@ -2266,11 +2301,18 @@ export default function App() {
                             )}
                             {g.best && (
                               <div style={{
-                                position: "absolute", top: 8, left: 8,
-                                background: "#111", color: "#FFC9B9",
-                                fontSize: 11, fontWeight: 800, padding: "4px 9px",
-                                borderRadius: 5, letterSpacing: 0.3,
-                              }}>★ 다이스파파 베스트</div>
+                                position: "absolute", top: 10, left: 10,
+                                display: "flex", alignItems: "center", gap: 6,
+                              }}>
+                                <div style={{
+                                  fontSize: 26, color: "#E8C04E",
+                                  textShadow: "0 2px 5px rgba(0,0,0,0.4)",
+                                }}>★</div>
+                                <div style={{
+                                  background: "#111", color: "#fff", fontSize: 11, fontWeight: 800,
+                                  padding: "4px 10px", borderRadius: 10, whiteSpace: "nowrap",
+                                }}>다이스파파 베스트</div>
+                              </div>
                             )}
                           </div>
                           {g.rule && (
