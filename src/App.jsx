@@ -2034,7 +2034,7 @@ export default function App() {
     (!selectedPurpose || g.purpose.includes(selectedPurpose)) &&
     (!soloOnly || g.solo) &&
     (!bestOnly || g.best)
-  );
+  ).sort((a, b) => (b.best ? 1 : 0) - (a.best ? 1 : 0));
 
   const reset = () => { setSelectedAge(null); setSelectedPurpose(null); setSoloOnly(false); setBestOnly(false); setShowResult(false); setExpanded(null); };
 
@@ -2101,9 +2101,9 @@ export default function App() {
               </div>
             </div>
 
-            {/* 발달 포인트 */}
+            {/* 발달 영역 */}
             <div style={{ marginBottom: 24 }}>
-              <div style={{ fontSize: 14, fontWeight: 800, color: "#555", marginBottom: 10 }}>🎯 발달 포인트</div>
+              <div style={{ fontSize: 14, fontWeight: 800, color: "#555", marginBottom: 10 }}>🎯 발달 영역</div>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 6 }}>
                 {allPurposes.map(p => (
                   <button key={p} onClick={() => {
