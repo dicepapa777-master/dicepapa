@@ -2021,6 +2021,12 @@ export default function App() {
   const [expanded, setExpanded] = useState(null);
   const [imgError, setImgError] = useState({});
 
+  const track = (eventName, params = {}) => {
+    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+      window.gtag("event", eventName, params);
+    }
+  };
+
   const ages = [4, 5, 6, 7];
 
   const filtered = games.filter(g =>
@@ -2042,7 +2048,7 @@ export default function App() {
         maxWidth: 480, margin: "0 auto",
       }}>
         <div style={{ flex: 1 }}>
-          <div style={{ fontSize: 10, fontWeight: 700, color: "#BBB", letterSpacing: 3, textTransform: "uppercase", marginBottom: 8 }}>DICEPAPA</div>
+          <div style={{ fontSize: 18, fontWeight: 900, color: "#111", letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>DICEPAPA</div>
           <div style={{ fontSize: 22, fontWeight: 900, color: "#111", lineHeight: 1.3, marginBottom: 8 }}>우리 아이<br />딱 맞는 보드게임</div>
         </div>
         <img
@@ -2063,10 +2069,10 @@ export default function App() {
               <div style={{ fontSize: 13, color: "#333", lineHeight: 1.7, fontWeight: 500 }}>
                 보드게임지도사 1급 아빠가 검증한 게임을<br />
                 필터 한 번으로 바로 찾아 보실 수 있어요.<br />
-                연령별 발달, 정확하게 맞춰드립니다.
+                연령 또는 발달 영역별로 정확히 맞춰드립니다.
               </div>
               <div style={{ display: "flex", gap: 8, marginTop: 10, flexWrap: "wrap" }}>
-                {["보드게임지도사 1급", "보드게임 취미 7년", "5살 아들 아빠"].map(tag => (
+                {["보드게임지도사 1급", "보드게임 매니아 아빠", "5살 아들과 재밌게 노는중"].map(tag => (
                   <span key={tag} style={{
                     padding: "3px 9px", borderRadius: 5, background: "#F3F3F3",
                     border: "1px solid #E8E8E8", fontSize: 11, color: "#666", fontWeight: 600,
@@ -2080,7 +2086,11 @@ export default function App() {
               <div style={{ fontSize: 14, fontWeight: 800, color: "#555", marginBottom: 10 }}>👶 아이 나이</div>
               <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                 {ages.map(age => (
-                  <button key={age} onClick={() => setSelectedAge(selectedAge === age ? null : age)} style={{
+                  <button key={age} onClick={() => {
+                    const next = selectedAge === age ? null : age;
+                    setSelectedAge(next);
+                    if (next !== null) track("select_age", { age: next });
+                  }} style={{
                     flex: "1 1 calc(25% - 8px)", minWidth: 60, padding: "12px 0", borderRadius: 8,
                     border: selectedAge === age ? "2px solid #111" : "2px solid #E0E0E0",
                     background: selectedAge === age ? "#111" : "#fff",
@@ -2096,7 +2106,11 @@ export default function App() {
               <div style={{ fontSize: 14, fontWeight: 800, color: "#555", marginBottom: 10 }}>🎯 발달 포인트</div>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 6 }}>
                 {allPurposes.map(p => (
-                  <button key={p} onClick={() => setSelectedPurpose(selectedPurpose === p ? null : p)} style={{
+                  <button key={p} onClick={() => {
+                    const next = selectedPurpose === p ? null : p;
+                    setSelectedPurpose(next);
+                    if (next !== null) track("select_purpose", { purpose: next, selected_age: selectedAge || "none" });
+                  }} style={{
                     padding: "9px 3px", minHeight: 44, borderRadius: 7,
                     border: selectedPurpose === p ? "2px solid #111" : "2px solid #E8E8E8",
                     background: selectedPurpose === p ? "#111" : "#fff",
@@ -2110,7 +2124,11 @@ export default function App() {
             </div>
 
             <div
-              onClick={() => setSoloOnly(!soloOnly)}
+              onClick={() => {
+                const next = !soloOnly;
+                setSoloOnly(next);
+                if (next) track("toggle_solo_only", {});
+              }}
               style={{
                 display: "flex", alignItems: "center", justifyContent: "space-between",
                 gap: 10, marginBottom: 12, cursor: "pointer",
@@ -2132,7 +2150,11 @@ export default function App() {
             </div>
 
             <div
-              onClick={() => setBestOnly(!bestOnly)}
+              onClick={() => {
+                const next = !bestOnly;
+                setBestOnly(next);
+                if (next) track("toggle_best_only", {});
+              }}
               style={{
                 display: "flex", alignItems: "center", justifyContent: "space-between",
                 gap: 10, marginBottom: 16, cursor: "pointer",
@@ -2154,7 +2176,17 @@ export default function App() {
             </div>
 
             <button
-              onClick={() => { if (selectedAge || selectedPurpose || soloOnly || bestOnly) setShowResult(true); }}
+              onClick={() => {
+                if (selectedAge || selectedPurpose || soloOnly || bestOnly) {
+                  setShowResult(true);
+                  track("view_result", {
+                    age: selectedAge || "none",
+                    purpose: selectedPurpose || "none",
+                    solo_only: soloOnly,
+                    best_only: bestOnly,
+                  });
+                }
+              }}
               disabled={!selectedAge && !selectedPurpose && !soloOnly && !bestOnly}
               style={{
                 width: "100%", padding: "15px", borderRadius: 10,
@@ -2260,7 +2292,7 @@ export default function App() {
                             <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 3 }}>
                               <div style={{ fontWeight: 800, fontSize: 14, color: "#111" }}>{g.name}</div>
                             </div>
-                            <div style={{ fontSize: 11, color: "#AAA", marginBottom: 6 }}>
+                            <div style={{ fontSize: 12, fontWeight: 600, color: "#777", marginBottom: 6 }}>
                               <div>👥 {g.players} · ⏱ {g.time}</div>
                               <div>🧒 {g.ageMin}세부터</div>
                             </div>
@@ -2284,8 +2316,14 @@ export default function App() {
                       </div>
                       {isOpen && (
                         <div style={{ padding: "0 16px 16px", borderTop: "1px solid #F0F0F0" }}>
+                          {g.effect && (
+                            <div style={{ marginTop: 14, padding: "14px 16px", background: "#F5FFF3", borderRadius: 10, border: "1.5px solid #B9E6BE" }}>
+                              <div style={{ fontSize: 13, fontWeight: 800, color: "#3E9B4C", marginBottom: 6 }}>🌱 발달 효과</div>
+                              <div style={{ fontSize: 15, fontWeight: 600, color: "#222", lineHeight: 1.6 }}>{g.effect}</div>
+                            </div>
+                          )}
                           <div style={{
-                            marginTop: 12, width: "100%", aspectRatio: "1 / 1", borderRadius: 10, position: "relative",
+                            margin: "12px auto 0", width: "80%", aspectRatio: "1 / 1", borderRadius: 10, position: "relative",
                             overflow: "hidden", background: "#F3F3F3", border: "1px solid #EEE",
                             display: "flex", alignItems: "center", justifyContent: "center",
                           }}>
@@ -2313,32 +2351,27 @@ export default function App() {
                             )}
                           </div>
                           {g.rule && (
-                            <div style={{ marginTop: 12 }}>
-                              <div style={{ fontSize: 10, fontWeight: 700, color: "#BBB", letterSpacing: 1, marginBottom: 5, textTransform: "uppercase" }}>📖 간단 규칙</div>
-                              <div style={{ fontSize: 12, color: "#444", lineHeight: 1.7 }}>{g.rule}</div>
-                            </div>
-                          )}
-                          {g.effect && (
-                            <div style={{ marginTop: 12, padding: "10px 12px", background: "#F8F8F8", borderRadius: 8 }}>
-                              <div style={{ fontSize: 10, fontWeight: 700, color: "#BBB", letterSpacing: 1, marginBottom: 4, textTransform: "uppercase" }}>🌱 발달 효과</div>
-                              <div style={{ fontSize: 12, color: "#444", lineHeight: 1.7 }}>{g.effect}</div>
+                            <div style={{ marginTop: 12, padding: "8px 10px", background: "#F5F8FF", borderRadius: 7, border: "1px solid #CBDCF9" }}>
+                              <div style={{ fontSize: 10, fontWeight: 700, color: "#4A7FD1", marginBottom: 3 }}>📖 간단 규칙</div>
+                              <div style={{ fontSize: 12, color: "#222", lineHeight: 1.5 }}>{g.rule}</div>
                             </div>
                           )}
                           {g.pros && (
-                            <div style={{ marginTop: 12, padding: "8px 10px", background: "#F5FFF6", borderRadius: 7, border: "1px solid #C3EAC8" }}>
-                              <div style={{ fontSize: 10, fontWeight: 700, color: "#5DA86A", marginBottom: 3 }}>👍 후기 장점</div>
-                              <div style={{ fontSize: 12, color: "#333", lineHeight: 1.5 }}>{g.pros}</div>
+                            <div style={{ marginTop: 12, padding: "8px 10px", background: "#F7F1FC", borderRadius: 7, border: "1px solid #E0C9F0" }}>
+                              <div style={{ fontSize: 10, fontWeight: 700, color: "#8B5AC0", marginBottom: 3 }}>👍 후기 요약</div>
+                              <div style={{ fontSize: 12, color: "#222", lineHeight: 1.5 }}>{g.pros}</div>
                             </div>
                           )}
                           {g.caution && (
                             <div style={{ marginTop: 8, padding: "8px 10px", background: "#FFFDF3", borderRadius: 7, border: "1px solid #FAEDC2" }}>
                               <div style={{ fontSize: 10, fontWeight: 700, color: "#C8A02A", marginBottom: 3 }}>⚠️ 주의사항</div>
-                              <div style={{ fontSize: 12, color: "#666", lineHeight: 1.5 }}>{g.caution}</div>
+                              <div style={{ fontSize: 12, color: "#222", lineHeight: 1.5 }}>{g.caution}</div>
                             </div>
                           )}
                           {g.coupang ? (
                             <a href={g.coupang} target="_blank" rel="noopener noreferrer"
-                              style={{ display: "block", marginTop: 12, padding: "10px", borderRadius: 8, background: "#FFC9B9", color: "#5A3B2E", textAlign: "center", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
+                              onClick={() => track("click_purchase", { game_no: g.no, game_name: g.name })}
+                              style={{ display: "block", marginTop: 12, padding: "10px", borderRadius: 8, background: "#FF5A5F", color: "#fff", textAlign: "center", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
                               🛒 구매하러 가기
                             </a>
                           ) : (
