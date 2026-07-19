@@ -2056,6 +2056,7 @@ export default function App() {
 
   const openBestModal = (g, age, rank) => {
     setBestModalGame(g);
+    window.history.pushState({ layer: "modal" }, "");
     track("click_best_card", { game_no: g.no, game_name: g.name, age, rank });
   };
 
@@ -2164,6 +2165,26 @@ export default function App() {
 
   const reset = () => { setSelectedAge(null); setSelectedPurpose(null); setSoloOnly(false); setBestOnly(false); setShowResult(false); };
 
+  // 뒤로가기(안드로이드/아이폰/브라우저 공통) 시 앱을 벗어나지 않고 모달 → 결과화면 → 메인 순으로 닫히게 처리
+  const bestModalGameRef = useRef(null);
+  useEffect(() => { bestModalGameRef.current = bestModalGame; }, [bestModalGame]);
+  const showResultRef = useRef(false);
+  useEffect(() => { showResultRef.current = showResult; }, [showResult]);
+
+  useEffect(() => {
+    const onPopState = () => {
+      if (bestModalGameRef.current) {
+        setBestModalGame(null);
+      } else if (showResultRef.current) {
+        reset();
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }
+    };
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, []);
+
+
   return (
     <div style={{ minHeight: "100vh", background: "#fff", fontFamily: "'Noto Sans KR', -apple-system, sans-serif", paddingBottom: "calc(80px + env(safe-area-inset-bottom))" }}>
 
@@ -2214,7 +2235,8 @@ export default function App() {
 
             {/* 다이스파파 베스트 */}
             <div style={{ marginBottom: 28 }}>
-              <div style={{ fontSize: 14, fontWeight: 800, color: "#111", marginBottom: 10 }}>🏆 다이스파파가 자신 있게 추천해요</div>
+              <div style={{ fontSize: 14, fontWeight: 800, color: "#111", marginBottom: 4 }}>🏆 다이스파파가 자신 있게 추천해요</div>
+              <div style={{ fontSize: 13, color: "#333", marginBottom: 10, marginLeft: 20 }}>(클릭하시면 자세한 정보를 보실 수 있어요)</div>
               <style>{`
                 .best-carousel-scroll { scrollbar-width: none; -ms-overflow-style: none; }
                 .best-carousel-scroll::-webkit-scrollbar { display: none; }
@@ -2301,7 +2323,7 @@ export default function App() {
             {/* 필터 구분 */}
             <div style={{ marginBottom: 20 }}>
               <div style={{ fontSize: 14, color: "#111", lineHeight: 1.4, fontWeight: 800 }}>
-                🔍 직접 필터로 찾아보아요
+                🔍 조건 선택해서 찾아보세요
               </div>
             </div>
 
@@ -2403,6 +2425,8 @@ export default function App() {
               onClick={() => {
                 if (selectedAge || selectedPurpose || soloOnly || bestOnly) {
                   setShowResult(true);
+                  window.history.pushState({ layer: "result" }, "");
+                  window.scrollTo({ top: 0, behavior: "instant" });
                   track("view_result", {
                     age: selectedAge || "none",
                     purpose: selectedPurpose || "none",
@@ -2457,7 +2481,11 @@ export default function App() {
             </div>
 
             {/* 결과 헤더 */}
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 14, paddingBottom: 14, borderBottom: "1.5px solid #E8E8E8" }}>
+            <div style={{
+              display: "flex", alignItems: "center", justifyContent: "space-between",
+              marginBottom: 14, padding: "10px 0 14px", borderBottom: "1.5px solid #E8E8E8",
+              position: "sticky", top: 0, background: "#fff", zIndex: 50,
+            }}>
               <div>
                 <div style={{ fontSize: 11, color: "#AAA", marginBottom: 2 }}>검색 결과</div>
                 <div style={{ fontWeight: 800, color: "#111", fontSize: 14 }}>
@@ -2471,7 +2499,7 @@ export default function App() {
                   <span style={{ color: "#999", fontWeight: 400, marginLeft: 6 }}>{filtered.length}개</span>
                 </div>
               </div>
-              <button onClick={reset} style={{
+              <button onClick={() => window.history.back()} style={{
                 padding: "7px 14px", borderRadius: 7, border: "1.5px solid #111",
                 background: "#fff", color: "#111", fontWeight: 700, fontSize: 12, cursor: "pointer"
               }}>다시 선택</button>
@@ -2489,6 +2517,7 @@ export default function App() {
                 {filtered.map((g) => {
                   const openDetail = () => {
                     setBestModalGame(g);
+                    window.history.pushState({ layer: "modal" }, "");
                     track("click_detail_card", { game_no: g.no, game_name: g.name });
                   };
                   return (
@@ -2584,7 +2613,7 @@ export default function App() {
       )}
       {bestModalGame && (
         <div
-          onClick={() => setBestModalGame(null)}
+          onClick={() => window.history.back()}
           style={{
             position: "fixed", inset: 0, background: "rgba(0,0,0,0.55)", zIndex: 200,
             display: "flex", alignItems: "flex-end", justifyContent: "center",
@@ -2600,7 +2629,7 @@ export default function App() {
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 6 }}>
               <div style={{ fontWeight: 900, fontSize: 16, color: "#111" }}>{bestModalGame.name}</div>
               <button
-                onClick={() => setBestModalGame(null)}
+                onClick={() => window.history.back()}
                 aria-label="닫기"
                 style={{
                   width: 28, height: 28, borderRadius: "50%", border: "1px solid #E0E0E0",
