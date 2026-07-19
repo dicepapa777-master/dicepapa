@@ -2574,22 +2574,22 @@ export default function App() {
                               <div>👥 {g.players} · ⏱ {g.time}</div>
                               <div>🧒 {g.ageMin}세부터</div>
                             </div>
-                            <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
-                              {g.purpose.map(p => (
-                                <span key={p} style={{
-                                  padding: "3px 7px", borderRadius: 5, fontSize: 10, fontWeight: 600,
-                                  background: selectedPurpose === p ? "#111" : "#F3F3F3",
-                                  color: selectedPurpose === p ? "#fff" : "#888",
-                                  border: selectedPurpose === p ? "none" : "1px solid #E8E8E8",
-                                }}>{purposeEmoji[p] || "🎲"} {p}</span>
-                              ))}
-                            </div>
                           </div>
                           <button onClick={(e) => { e.stopPropagation(); openDetail(); }} style={{
                             fontSize: 11, color: "#666", fontWeight: 700, flexShrink: 0,
                             padding: "5px 10px", borderRadius: 6, border: "1px solid #DDD",
                             background: "#fff", cursor: "pointer", whiteSpace: "nowrap",
                           }}>자세히보기</button>
+                        </div>
+                        <div style={{ display: "flex", flexWrap: "wrap", gap: 4, marginTop: 8 }}>
+                          {g.purpose.map(p => (
+                            <span key={p} style={{
+                              padding: "3px 7px", borderRadius: 5, fontSize: 10, fontWeight: 600,
+                              background: selectedPurpose === p ? "#111" : "#F3F3F3",
+                              color: selectedPurpose === p ? "#fff" : "#888",
+                              border: selectedPurpose === p ? "none" : "1px solid #E8E8E8",
+                            }}>{purposeEmoji[p] || "🎲"} {p}</span>
+                          ))}
                         </div>
                       </div>
                     </div>
