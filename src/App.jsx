@@ -2296,8 +2296,11 @@ export default function App() {
                             <span style={{ fontSize: 24 }}>🎲</span>
                           )}
                         </div>
-                        <div style={{ fontSize: 11, fontWeight: 700, color: "#222", marginTop: 6, lineHeight: 1.3 }}>{g.name}</div>
-                        <div style={{ fontSize: 11, color: "#888", marginTop: 2 }}>👥{g.players} · ⏱{g.time}</div>
+                        <div style={{ fontSize: 13, fontWeight: 700, color: "#222", marginTop: 6, lineHeight: 1.3 }}>{g.name}</div>
+                        <div style={{ fontSize: 13, color: "#888", marginTop: 2, lineHeight: 1.4 }}>
+                          <div>👥{g.players}</div>
+                          <div>⏱{g.time}</div>
+                        </div>
                       </div>
                     );
                   })}
