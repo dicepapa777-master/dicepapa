@@ -69,7 +69,7 @@ const games = [
     "ageMin": 4,
     "ageMax": 5,
     "purpose": [
-      "색·패턴인지",
+      "색깔·패턴",
       "집중력",
       "사고력"
     ],
@@ -306,7 +306,7 @@ const games = [
     "purpose": [
       "소근육",
       "집중력",
-      "색·패턴인지"
+      "색깔·패턴"
     ],
     "players": "2~4명",
     "time": "15분",
@@ -424,7 +424,7 @@ const games = [
     "ageMin": 4,
     "ageMax": 7,
     "purpose": [
-      "색·패턴인지",
+      "색깔·패턴",
       "관찰력",
       "수인지"
     ],
@@ -564,7 +564,7 @@ const games = [
     "ageMax": 7,
     "purpose": [
       "수인지",
-      "색·패턴인지"
+      "색깔·패턴"
     ],
     "players": "2~4명",
     "time": "20분",
@@ -661,7 +661,7 @@ const games = [
     "ageMin": 4,
     "ageMax": 7,
     "purpose": [
-      "색·패턴인지",
+      "색깔·패턴",
       "순발력",
       "수인지"
     ],
@@ -682,7 +682,7 @@ const games = [
     "ageMax": 5,
     "purpose": [
       "공간지각",
-      "색·패턴인지",
+      "색깔·패턴",
       "소근육"
     ],
     "players": "1~4명",
@@ -902,7 +902,7 @@ const games = [
     "ageMax": 5,
     "purpose": [
       "수인지",
-      "색·패턴인지",
+      "색깔·패턴",
       "소근육"
     ],
     "players": "1~4명",
@@ -1158,7 +1158,7 @@ const games = [
     "ageMin": 4,
     "ageMax": 7,
     "purpose": [
-      "색·패턴인지",
+      "색깔·패턴",
       "사회성",
       "수인지"
     ],
@@ -1318,7 +1318,7 @@ const games = [
     "ageMax": 7,
     "purpose": [
       "소근육",
-      "색·패턴인지",
+      "색깔·패턴",
       "수인지"
     ],
     "players": "2~4명",
@@ -1418,7 +1418,7 @@ const games = [
     "ageMax": 7,
     "purpose": [
       "순발력",
-      "색·패턴인지",
+      "색깔·패턴",
       "집중력"
     ],
     "players": "2~4명",
@@ -1476,7 +1476,7 @@ const games = [
     "ageMin": 4,
     "ageMax": 7,
     "purpose": [
-      "색·패턴인지",
+      "색깔·패턴",
       "관찰력",
       "공간지각"
     ],
@@ -1496,7 +1496,7 @@ const games = [
     "ageMin": 4,
     "ageMax": 7,
     "purpose": [
-      "색·패턴인지",
+      "색깔·패턴",
       "관찰력",
       "기억력"
     ],
@@ -1516,7 +1516,7 @@ const games = [
     "ageMin": 4,
     "ageMax": 6,
     "purpose": [
-      "색·패턴인지",
+      "색깔·패턴",
       "관찰력",
       "공간지각"
     ],
@@ -1537,7 +1537,7 @@ const games = [
     "ageMax": 7,
     "purpose": [
       "관찰력",
-      "색·패턴인지"
+      "색깔·패턴"
     ],
     "players": "2~4명",
     "time": "10분",
@@ -1615,7 +1615,7 @@ const games = [
     "ageMin": 4,
     "ageMax": 7,
     "purpose": [
-      "색·패턴인지",
+      "색깔·패턴",
       "소근육",
       "수인지"
     ],
@@ -1657,7 +1657,7 @@ const games = [
     "purpose": [
       "관찰력",
       "공간지각",
-      "색·패턴인지"
+      "색깔·패턴"
     ],
     "players": "1명",
     "time": "10분",
@@ -1676,7 +1676,7 @@ const games = [
     "ageMax": 7,
     "purpose": [
       "순발력",
-      "색·패턴인지",
+      "색깔·패턴",
       "사회성"
     ],
     "players": "2~4명",
@@ -1814,7 +1814,7 @@ const games = [
     "ageMax": 6,
     "purpose": [
       "사회성",
-      "색·패턴인지",
+      "색깔·패턴",
       "사고력"
     ],
     "players": "1~4명",
@@ -1833,7 +1833,7 @@ const games = [
     "ageMin": 4,
     "ageMax": 5,
     "purpose": [
-      "색·패턴인지",
+      "색깔·패턴",
       "소근육"
     ],
     "players": "2~4명",
@@ -1912,7 +1912,7 @@ const games = [
     "ageMax": 7,
     "purpose": [
       "소근육",
-      "색·패턴인지",
+      "색깔·패턴",
       "순발력"
     ],
     "players": "2~4명",
@@ -1951,7 +1951,7 @@ const games = [
     "ageMin": 4,
     "ageMax": 5,
     "purpose": [
-      "색·패턴인지",
+      "색깔·패턴",
       "소근육",
       "사회성"
     ],
@@ -1971,7 +1971,7 @@ const games = [
     "ageMin": 4,
     "ageMax": 5,
     "purpose": [
-      "색·패턴인지",
+      "색깔·패턴",
       "소근육",
       "기억력"
     ],
@@ -1996,14 +1996,14 @@ const purposeEmoji = {
   "순발력": "⚡",
   "공간지각": "📐",
   "기억력": "💭",
-  "색·패턴인지": "🎨",
+  "색깔·패턴": "🎨",
   "언어발달": "💬",
   "사회성": "🤝",
   "전략": "♟️"
 };
 
 const purposeCounts = games.flatMap(g => g.purpose).reduce((acc, p) => { acc[p] = (acc[p] || 0) + 1; return acc; }, {});
-const purposeOrder = ["집중력", "기억력", "관찰력", "사고력", "순발력", "언어발달", "수인지", "색·패턴인지", "공간지각", "소근육", "사회성", "전략"];
+const purposeOrder = ["집중력", "기억력", "관찰력", "사고력", "순발력", "언어발달", "수인지", "색깔·패턴", "공간지각", "소근육", "사회성", "전략"];
 const allPurposes = purposeOrder.filter(p => games.some(g => g.purpose.includes(p)));
 
 export default function App() {
@@ -2340,7 +2340,7 @@ export default function App() {
                     background: selectedPurpose === p ? "#111" : "#fff",
                     color: selectedPurpose === p ? "#fff" : "#333",
                     fontWeight: selectedPurpose === p ? 700 : 600,
-                    fontSize: p === "색·패턴인지" ? 12 : 13, cursor: "pointer", transition: "all 0.15s",
+                    fontSize: 13, cursor: "pointer", transition: "all 0.15s",
                     display: "flex", alignItems: "center", justifyContent: "center",
                   }}><span style={{ fontSize: 10 }}>{purposeEmoji[p] || "🎲"}</span> {p}</button>
                 ))}
