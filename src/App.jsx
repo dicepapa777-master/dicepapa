@@ -2340,7 +2340,7 @@ export default function App() {
                     background: selectedPurpose === p ? "#111" : "#fff",
                     color: selectedPurpose === p ? "#fff" : "#333",
                     fontWeight: selectedPurpose === p ? 700 : 600,
-                    fontSize: 13, cursor: "pointer", transition: "all 0.15s",
+                    fontSize: p === "색·패턴인지" ? 12 : 13, cursor: "pointer", transition: "all 0.15s",
                     display: "flex", alignItems: "center", justifyContent: "center",
                   }}><span style={{ fontSize: 10 }}>{purposeEmoji[p] || "🎲"}</span> {p}</button>
                 ))}
@@ -2422,6 +2422,17 @@ export default function App() {
                 transition: "all 0.15s",
               }}
             >🎲 추천 보드게임 보기</button>
+
+            <div style={{
+              marginTop: 10, background: "#fff", borderRadius: 10,
+              padding: "12px 16px", display: "flex", alignItems: "center",
+              justifyContent: "space-between", gap: 10,
+            }}>
+              <div style={{ fontSize: 13, color: "#111", fontWeight: 700, whiteSpace: "nowrap" }}>🎲 더 많은 정보를 얻고 싶다면!</div>
+              <a href="https://instagram.com/dicepapa777" target="_blank" rel="noopener noreferrer"
+                onClick={() => track("click_instagram_follow", { location: "main" })}
+                style={{ padding: "7px 14px", borderRadius: 7, border: "1.5px solid #111", background: "#111", color: "#fff", fontWeight: 700, fontSize: 12, textDecoration: "none", flexShrink: 0 }}>인스타 팔로우</a>
+            </div>
           </>
         ) : (
           <>
