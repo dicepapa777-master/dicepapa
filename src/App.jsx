@@ -2003,7 +2003,8 @@ const purposeEmoji = {
 };
 
 const purposeCounts = games.flatMap(g => g.purpose).reduce((acc, p) => { acc[p] = (acc[p] || 0) + 1; return acc; }, {});
-const allPurposes = [...new Set(games.flatMap(g => g.purpose))].sort((a, b) => purposeCounts[b] - purposeCounts[a]);
+const purposeOrder = ["집중력", "기억력", "관찰력", "사고력", "순발력", "언어발달", "수인지", "색·패턴인지", "공간지각", "소근육", "사회성", "전략"];
+const allPurposes = purposeOrder.filter(p => games.some(g => g.purpose.includes(p)));
 
 export default function App() {
   const [selectedAge, setSelectedAge] = useState(null);
@@ -2173,8 +2174,12 @@ export default function App() {
         maxWidth: 480, margin: "0 auto",
       }}>
         <div style={{ flex: 1 }}>
-          <div style={{ fontSize: 18, fontWeight: 900, color: "#111", letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>DICEPAPA</div>
+          <div style={{ fontSize: 18, fontWeight: 900, color: "#111", letterSpacing: 2, textTransform: "uppercase", marginBottom: 6 }}>DICEPAPA</div>
           <div style={{ fontSize: 22, fontWeight: 900, color: "#111", lineHeight: 1.3, marginBottom: 8 }}>우리 아이<br />딱 맞는 보드게임</div>
+          <div style={{
+            display: "inline-block", padding: "5px 12px", borderRadius: 6, background: "#fff",
+            border: "1.5px solid #111", color: "#111", fontSize: 13, fontWeight: 800, whiteSpace: "nowrap",
+          }}>4~7세 미취학 아동 전용</div>
         </div>
         <img
           src={`data:image/png;base64,${CHAR_IMAGE}`}
@@ -2244,8 +2249,15 @@ export default function App() {
                         style={{
                           flex: "0 0 auto", width: "calc((100% - 20px) / 3.3)", scrollSnapAlign: "start", cursor: "pointer",
                           padding: 8, borderRadius: 12, background: theme.bg, border: `1.5px solid ${theme.border}`,
+                          position: "relative",
                         }}
                       >
+                        <div style={{
+                          position: "absolute", top: 0, left: 0, zIndex: 2,
+                          background: rankBadge[g.bestRank].bg, color: rankBadge[g.bestRank].color,
+                          borderRadius: 8, padding: "3px 7px", fontSize: 11, fontWeight: 900,
+                          boxShadow: "0 1px 3px rgba(0,0,0,0.25)", whiteSpace: "nowrap",
+                        }}>{g.ageMin}세 {rankBadge[g.bestRank].label}</div>
                         <div style={{
                           width: "100%", aspectRatio: "1 / 1", borderRadius: 10, position: "relative",
                           background: "#fff", border: "1px solid #EEE", overflow: "hidden",
@@ -2261,12 +2273,6 @@ export default function App() {
                           ) : (
                             <span style={{ fontSize: 24 }}>🎲</span>
                           )}
-                          <div style={{
-                            position: "absolute", top: 4, left: 4,
-                            background: rankBadge[g.bestRank].bg, color: rankBadge[g.bestRank].color,
-                            borderRadius: 8, padding: "3px 7px", fontSize: 11, fontWeight: 900,
-                            boxShadow: "0 1px 3px rgba(0,0,0,0.25)", whiteSpace: "nowrap",
-                          }}>{g.ageMin}세 {rankBadge[g.bestRank].label}</div>
                         </div>
                         <div style={{ fontSize: 11, fontWeight: 700, color: "#222", marginTop: 6, lineHeight: 1.3 }}>{g.name}</div>
                         <div style={{ fontSize: 11, color: "#888", marginTop: 2 }}>👥{g.players} · ⏱{g.time}</div>
@@ -2336,7 +2342,7 @@ export default function App() {
                     fontWeight: selectedPurpose === p ? 700 : 600,
                     fontSize: 13, cursor: "pointer", transition: "all 0.15s",
                     display: "flex", alignItems: "center", justifyContent: "center",
-                  }}>{purposeEmoji[p] || "🎲"} {p}</button>
+                  }}><span style={{ fontSize: 10 }}>{purposeEmoji[p] || "🎲"}</span> {p}</button>
                 ))}
               </div>
             </div>
