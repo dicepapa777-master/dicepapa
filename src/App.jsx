@@ -2199,7 +2199,7 @@ export default function App() {
               <div style={{ fontSize: 13, color: "#333", lineHeight: 1.7, fontWeight: 500 }}>
                 보드게임지도사 1급 아빠가<br />
                 직접 검증한 <span style={{ color: "#111", fontWeight: 800 }}>베스트 게임</span>부터<br />
-                <span style={{ color: "#111", fontWeight: 800 }}>연령</span>과 <span style={{ color: "#111", fontWeight: 800 }}>발달 영역</span>에 딱 맞춘 게임까지<br />
+                <span style={{ color: "#111", fontWeight: 800 }}>연령</span>과 <span style={{ color: "#111", fontWeight: 800 }}>발달 영역</span>에 딱 맞춘 게임까지!<br />
                 한 곳에서 편하게 찾아보세요
               </div>
               <div style={{ display: "flex", gap: 8, marginTop: 10, flexWrap: "wrap" }}>
