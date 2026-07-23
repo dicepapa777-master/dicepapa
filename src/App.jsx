@@ -2006,6 +2006,10 @@ const purposeCounts = games.flatMap(g => g.purpose).reduce((acc, p) => { acc[p] 
 const purposeOrder = ["집중력", "기억력", "관찰력", "사고력", "순발력", "언어발달", "수인지", "색깔·패턴", "공간지각", "소근육", "사회성", "전략"];
 const allPurposes = purposeOrder.filter(p => games.some(g => g.purpose.includes(p)));
 
+const bestCarouselGames = [4, 5, 6, 7].flatMap(age =>
+  games.filter(g => g.bestRank && g.ageMin === age).sort((a, b) => a.bestRank - b.bestRank)
+);
+
 export default function App() {
   const [selectedAge, setSelectedAge] = useState(null);
   const [selectedPurpose, setSelectedPurpose] = useState(null);
@@ -2015,21 +2019,22 @@ export default function App() {
   const [imgError, setImgError] = useState({});
   const [bestModalGame, setBestModalGame] = useState(null);
   const scrollRefs = useRef({});
-  const [carouselScroll, setCarouselScroll] = useState({ progress: 0, thumbPct: 30 });
 
   const handleBestCarouselScroll = (e) => {
     const el = e.currentTarget;
-    const max = el.scrollWidth - el.clientWidth;
-    const progress = max > 0 ? el.scrollLeft / max : 0;
-    const thumbPct = Math.min(100, (el.clientWidth / el.scrollWidth) * 100);
-    setCarouselScroll({ progress, thumbPct });
+    const setWidth = el.scrollWidth / 3;
+    const maxScroll = el.scrollWidth - el.clientWidth;
+    if (el.scrollLeft <= 0) {
+      el.scrollLeft += setWidth;
+    } else if (el.scrollLeft >= maxScroll) {
+      el.scrollLeft -= setWidth;
+    }
   };
 
   useEffect(() => {
     const el = scrollRefs.current.all;
     if (el) {
-      const thumbPct = Math.min(100, (el.clientWidth / el.scrollWidth) * 100);
-      setCarouselScroll(prev => ({ ...prev, thumbPct }));
+      el.scrollLeft = el.scrollWidth / 3; // 가운데 벌에서 시작해야 양쪽으로 넘길 여유가 생김
     }
   }, []);
 
@@ -2256,17 +2261,15 @@ export default function App() {
                   className="best-carousel-scroll"
                   onScroll={handleBestCarouselScroll}
                   style={{
-                    display: "flex", gap: 10, overflowX: "auto", scrollSnapType: "x mandatory",
+                    display: "flex", gap: 10, overflowX: "auto", scrollSnapType: "x proximity",
                     WebkitOverflowScrolling: "touch", padding: "2px 4px 4px", flex: 1, minWidth: 0,
                   }}
                 >
-                {[4, 5, 6, 7].flatMap(age =>
-                  games.filter(g => g.bestRank && g.ageMin === age).sort((a, b) => a.bestRank - b.bestRank)
-                ).map(g => {
+                {[...bestCarouselGames, ...bestCarouselGames, ...bestCarouselGames].map((g, idx) => {
                     const theme = ageTheme[g.ageMin];
                     return (
                       <div
-                        key={g.no}
+                        key={`${g.no}-${idx}`}
                         onClick={() => openBestModal(g, g.ageMin, g.bestRank)}
                         style={{
                           flex: "0 0 auto", width: "calc((100% - 20px) / 3.3)", scrollSnapAlign: "start", cursor: "pointer",
@@ -2314,12 +2317,6 @@ export default function App() {
                     cursor: "pointer", boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
                   }}
                 >›</button>
-              </div>
-              <div style={{ marginTop: 4, marginLeft: 24, marginRight: 24, height: 4, background: "#EEE", borderRadius: 2, position: "relative", overflow: "hidden" }}>
-                <div style={{
-                  position: "absolute", top: 0, left: `${carouselScroll.progress * (100 - carouselScroll.thumbPct)}%`,
-                  width: `${carouselScroll.thumbPct}%`, height: "100%", background: "#BBB", borderRadius: 2,
-                }} />
               </div>
             </div>
 
