@@ -2016,6 +2016,7 @@ export default function App() {
   const [soloOnly, setSoloOnly] = useState(false);
   const [bestOnly, setBestOnly] = useState(false);
   const [showResult, setShowResult] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const [imgError, setImgError] = useState({});
   const [bestModalGame, setBestModalGame] = useState(null);
   const scrollRefs = useRef({});
@@ -2170,6 +2171,10 @@ export default function App() {
 
   const reset = () => { setSelectedAge(null); setSelectedPurpose(null); setSoloOnly(false); setBestOnly(false); setShowResult(false); };
 
+  const searchResults = searchQuery.trim()
+    ? games.filter(g => g.name.replace(/\s/g, "").includes(searchQuery.trim().replace(/\s/g, "")))
+    : [];
+
   // 뒤로가기(안드로이드/아이폰/브라우저 공통) 시 앱을 벗어나지 않고 모달 → 결과화면 → 메인 순으로 닫히게 처리
   const bestModalGameRef = useRef(null);
   useEffect(() => { bestModalGameRef.current = bestModalGame; }, [bestModalGame]);
@@ -2215,29 +2220,105 @@ export default function App() {
       </div>
 
       <div style={{ padding: "24px 16px", maxWidth: 480, margin: "0 auto" }}>
-        {!showResult ? (
-          <>
-            {/* 소개 섹션 */}
-            <div style={{ borderLeft: "3px solid #111", paddingLeft: 14, marginBottom: 28 }}>
-              <div style={{ fontSize: 15, color: "#111", lineHeight: 1.5, fontWeight: 800, marginBottom: 6 }}>
-                아이 보드게임, 이제 헤매지 마세요
-              </div>
-              <div style={{ fontSize: 13, color: "#333", lineHeight: 1.7, fontWeight: 500 }}>
-                보드게임지도사 1급 아빠가<br />
-                직접 검증한 <span style={{ color: "#111", fontWeight: 800 }}>베스트 게임</span>부터<br />
-                <span style={{ color: "#111", fontWeight: 800 }}>연령</span>과 <span style={{ color: "#111", fontWeight: 800 }}>발달 영역</span>에 딱 맞춘 게임까지!<br />
-                한 곳에서 편하게 찾아보세요
-              </div>
-              <div style={{ display: "flex", gap: 8, marginTop: 10, flexWrap: "wrap" }}>
-                {["보드게임지도사 1급", "보드게임 매니아 아빠", "5살 아들과 재밌게 노는중"].map(tag => (
-                  <span key={tag} style={{
-                    padding: "3px 9px", borderRadius: 5, background: "#F3F3F3",
-                    border: "1px solid #E8E8E8", fontSize: 11, color: "#666", fontWeight: 600,
-                  }}>{tag}</span>
-                ))}
-              </div>
-            </div>
 
+        {/* 소개 섹션 */}
+        <div style={{ borderLeft: "3px solid #111", paddingLeft: 14, marginBottom: 24 }}>
+          <div style={{ fontSize: 15, color: "#111", lineHeight: 1.5, fontWeight: 800, marginBottom: 6 }}>
+            아이 보드게임, 이제 헤매지 마세요
+          </div>
+          <div style={{ fontSize: 13, color: "#333", lineHeight: 1.7, fontWeight: 500 }}>
+            보드게임지도사 1급 아빠가<br />
+            직접 검증한 <span style={{ color: "#111", fontWeight: 800 }}>베스트 게임</span>부터<br />
+            <span style={{ color: "#111", fontWeight: 800 }}>연령</span>과 <span style={{ color: "#111", fontWeight: 800 }}>발달 영역</span>에 딱 맞춘 게임까지!<br />
+            한 곳에서 편하게 찾아보세요
+          </div>
+          <div style={{ display: "flex", gap: 8, marginTop: 10, flexWrap: "wrap" }}>
+            {["보드게임지도사 1급", "보드게임 매니아 아빠", "5살 아들과 재밌게 노는중"].map(tag => (
+              <span key={tag} style={{
+                padding: "3px 9px", borderRadius: 5, background: "#F3F3F3",
+                border: "1px solid #E8E8E8", fontSize: 11, color: "#666", fontWeight: 600,
+              }}>{tag}</span>
+            ))}
+          </div>
+        </div>
+
+        {/* 검색창 - 항상 같은 위치에 렌더링되어야 한글 입력(IME)이 끊기지 않음 */}
+        <div style={{ position: "relative", marginBottom: 24 }}>
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="🔍 게임 이름으로 검색해보세요"
+            style={{
+              width: "100%", padding: "11px 36px 11px 14px", borderRadius: 9,
+              border: "1.5px solid #E8E8E8", fontSize: 14, boxSizing: "border-box", outline: "none",
+            }}
+          />
+          {searchQuery && (
+            <button
+              onClick={() => setSearchQuery("")}
+              aria-label="검색어 지우기"
+              style={{
+                position: "absolute", right: 8, top: "50%", transform: "translateY(-50%)",
+                width: 24, height: 24, borderRadius: "50%", border: "none",
+                background: "#F0F0F0", color: "#888", fontSize: 13, cursor: "pointer",
+              }}
+            >✕</button>
+          )}
+        </div>
+
+        {searchQuery.trim() ? (
+          <>
+            {/* 검색 결과 */}
+            <div style={{ fontSize: 13, color: "#666", fontWeight: 600, marginBottom: 12 }}>
+              "{searchQuery.trim()}" 검색결과 {searchResults.length}개
+            </div>
+            {searchResults.length === 0 ? (
+              <div style={{ textAlign: "center", padding: "40px 0", color: "#AAA", fontSize: 13 }}>
+                일치하는 게임을 찾지 못했어요
+              </div>
+            ) : (
+              <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                {searchResults.map((g) => {
+                  const openDetail = () => {
+                    setBestModalGame(g);
+                    window.history.pushState({ layer: "modal" }, "");
+                    track("click_search_result", { game_no: g.no, game_name: g.name, query: searchQuery.trim() });
+                  };
+                  return (
+                    <div key={g.no} onClick={openDetail} style={{
+                      display: "flex", gap: 12, alignItems: "center", cursor: "pointer",
+                      background: "#fff", borderRadius: 10, border: "1.5px solid #E8E8E8",
+                      borderLeft: "3px solid #111", padding: "12px 14px",
+                    }}>
+                      <div style={{
+                        width: 48, height: 48, borderRadius: 8, flexShrink: 0,
+                        background: "#F3F3F3", border: "1px solid #EEE", overflow: "hidden",
+                        display: "flex", alignItems: "center", justifyContent: "center",
+                      }}>
+                        {!imgError[g.no] ? (
+                          <img
+                            src={`/games/${g.no}.jpg`}
+                            alt={g.name}
+                            onError={() => setImgError(prev => ({ ...prev, [g.no]: true }))}
+                            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                          />
+                        ) : (
+                          <span style={{ fontSize: 18 }}>🎲</span>
+                        )}
+                      </div>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 800, fontSize: 14, color: "#111" }}>{g.name}</div>
+                        <div style={{ fontSize: 11, color: "#888", marginTop: 2 }}>👥 {g.players} · ⏱ {g.time} · 🧒 {g.ageMin}세부터</div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </>
+        ) : !showResult ? (
+          <>
             {/* 다이스파파 베스트 */}
             <div style={{ marginBottom: 28 }}>
               <div style={{ fontSize: 14, fontWeight: 800, color: "#111", marginBottom: 4 }}>🏆 다이스파파가 자신 있게 추천해요</div>
