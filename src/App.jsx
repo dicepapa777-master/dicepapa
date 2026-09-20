@@ -494,7 +494,7 @@ const games = [
     "pros": "규칙 매우 간단, 빠른 진행, 아이가 먼저 꺼내 옴",
     "caution": "운 요소 강해 반복 시 결과 예측 어려움",
     "solo": false,
-    "best": false
+    "best": true
   },
   {
     "no": 26,
